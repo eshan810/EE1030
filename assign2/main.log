@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  10 AUG 2024 17:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  11 AUG 2024 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -25,7 +25,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
--- This is a 12 point document.
+-- This is an 11 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen144
 \CLASSINFOnormalsizeunitybaselineskip=\dimen145
 \IEEEnormaljot=\dimen146
@@ -49,24 +49,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <22> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <22> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
@@ -1452,13 +1452,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 1.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 41.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 41.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1513,28 +1513,28 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 41.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <11> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 41.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <11> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <22> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 41.
 
--- Lines per column: 50 (exact).
+-- Lines per column: 52 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count396
@@ -1667,11 +1667,14 @@ LaTeX Info: Redefining \ohm on input line 41.
 Package gensymb Info: Using \textohm for \ohm on input line 41.
 Package gensymb Info: Using \textmu for \micro on input line 41.
 Package hyperref Info: Link coloring OFF on input line 41.
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 56.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
 6.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
@@ -1705,8 +1708,9 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 56
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 86--90
-\OT1/txr/m/n/12 S=$[]$; then S:
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+[] \OMS/txsy/m/n/11 _ \OML/txmi/m/it/11 q \OMS/txsy/m/n/11 _ []$ \OT1/txr/m/n/1
+1 is equiv-a-lent to:
  []
 
 ! Undefined control sequence.
@@ -1732,13 +1736,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
-[] \OMS/txsy/m/n/12 ! [] []$ \OT1/txr/m/n/12 is:
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
+\OMS/txsy/m/n/11 ^^X [] _ []$ \OT1/txr/m/n/11 is equiv-a-lent to:
  []
 
 
-Underfull \hbox (badness 5022) in paragraph at lines 131--134
-\OMS/txsy/m/n/12 ^^X [] _ []$ \OT1/txr/m/n/12 is equiv-a-lent to:
+Underfull \hbox (badness 1859) in paragraph at lines 139--142
+\OT1/txr/m/n/11 2 [] + [] [] + 6 = 0$. Then S:
  []
 
 
@@ -1767,14 +1771,15 @@ Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 
 ]
-Underfull \hbox (badness 1960) in paragraph at lines 164--166
-[]\OT1/txr/m/n/12 If the stan-dard de-vi-a-tion of the num-bers
+Underfull \hbox (badness 3449) in paragraph at lines 157--159
+\OT1/txr/m/n/11 150$ cm and vari-ance $18$ $\OML/txmi/m/it/11 cm[]$\OT1/txr/m/n
+/11 . A new stu-
  []
 
 
-Underfull \hbox (badness 2035) in paragraph at lines 171--173
-\OT1/txr/m/n/12 a-tive of the ex-pres-sion $\OML/txmi/m/it/12 p \OMS/txsy/m/n/1
-2 _ []$ \OT1/txr/m/n/12 is:
+Underfull \hbox (badness 2529) in paragraph at lines 164--166
+\OT1/txr/m/n/11 is $[]$ where $\OML/txmi/m/it/11 k > \OT1/txr/m/n/11 0$, then $
+\OML/txmi/m/it/11 k$ \OT1/txr/m/n/11 is equal to:
  []
 
 [2
@@ -1784,22 +1789,15 @@ Underfull \hbox (badness 2035) in paragraph at lines 171--173
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 33401 strings out of 474222
- 647898 string characters out of 5748734
- 1959975 words of memory out of 5000000
- 54884 multiletter control sequences out of 15000+600000
- 617853 words of font info for 161 fonts, out of 8000000 for 9000
+ 33425 strings out of 474222
+ 648304 string characters out of 5748734
+ 1963975 words of memory out of 5000000
+ 54899 multiletter control sequences out of 15000+600000
+ 622853 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,6n,103p,1172b,660s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
@@ -1809,7 +1807,7 @@ onts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 51374 bytes).
+Output written on main.pdf (2 pages, 51309 bytes).
 PDF statistics:
  62 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
