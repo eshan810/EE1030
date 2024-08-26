@@ -1,87 +1,41 @@
 #include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
 
-
-#define WIDTH 80
-#define HEIGHT 20
-
-void plotLine(char canvas[HEIGHT][WIDTH], int x1, int y1, int x2, int y2) {
-    int dx = abs(x2 - x1);
-    int dy = abs(y2 - y1);
-    int sx = (x1 < x2) ? 1 : -1;
-    int sy = (y1 < y2) ? 1 : -1;
-    int err = dx - dy;
-    int e2;
-
-    while (1) {
-        canvas[y1][x1] = '#';
-        if (x1 == x2 && y1 == y2) break;
-        e2 = 2 * err;
-        if (e2 > -dy) {
-            err -= dy;
-            x1 += sx;
-        }
-        if (e2 < dx) {
-            err += dx;
-            y1 += sy;
-        }
-    }
-}
-
-void plotPoint(char canvas[HEIGHT][WIDTH], int x, int y, char label) {
-    if (x >= 0 && x < WIDTH && y >= 0 && y < HEIGHT) {
-        canvas[y][x] = label;
-    }
-}
-
-void printCanvasToFile(const char* filename, char canvas[HEIGHT][WIDTH]) {
-    FILE *file = fopen("output.txt", "w");
+// Function to write numerical coordinates to the output file
+void writeCoordinatesToFile(const char* output) {
+    FILE *file = fopen("output", "w");
     if (!file) {
-        fprintf(stderr, "Error opening file %s for writing\n", filename);
+        // Print an error message if the file cannot be opened
+        fprintf(stderr, "Error opening file %s for writing\n", output);
         return;
     }
 
-    for (int i = 0; i < HEIGHT; i++) {
-        for (int j = 0; j < WIDTH; j++) {
-            fprintf(file, "%c", canvas[i][j] ? canvas[i][j] : ' ');
-        }
-        fprintf(file, "\n");
+    // Define the endpoints of the line segment BA
+    
+    double B_x = 0.0, B_y = 0.0; // Starting point B
+    double A_x = 10.0, A_y = 10.0; // Ending point A
+
+    // Write the coordinates of B and A
+    fprintf(file, "%.2f %.2f\n", B_x, B_y);
+    fprintf(file, "%.2f %.2f\n", A_x, A_y);
+
+    // Define the fractions for the points
+    double fractions[] = {0.3, 0.6, 0.9, 1.5};
+
+    // Calculate and write the coordinates for the given fractions
+    for (int i = 0; i < 4; ++i) {
+        double fraction = fractions[i];
+        double x = B_x + fraction * (A_x - B_x);
+        double y = B_y + fraction * (A_y - B_y);
+        fprintf(file, "%.2f %.2f\n", x, y);
     }
 
     fclose(file);
 }
 
 int main() {
-    char canvas[HEIGHT][WIDTH] = {0};
-
-    // Define start and end points
-    int startX = 10;
-    int startY = 10;
-    int endX = 70;
-    int endY = 10;
-
-    // Plot the line
-    plotLine(canvas, startX, startY, endX, endY);
-
-    // Calculate the points
-    int points[4][2] = {
-        {(int)(startX + 0.3 * (endX - startX)), startY},
-        {(int)(startX + 0.6 * (endX - startX)), startY},
-        {(int)(startX + 0.9 * (endX - startX)), startY},
-        {(int)(startX + 1.5 * (endX - startX)), startY} // This point will be outside the segment
-    };
-
-    // Plot the points
-    for (int i = 0; i < 4; ++i) {
-        char label = (i == 3) ? 'C' : '*'; // 'C' for the 1.5BA point, '*' for others
-        plotPoint(canvas, points[i][0], points[i][1], label);
-    }
-
-    // Print the canvas to a file
-    printCanvasToFile("output.txt", canvas);
-
-    printf("Plot saved to output.txt\n");
+    // Call the function to write coordinates to the file
+    writeCoordinatesToFile("output");
     return 0;
 }
+
 
