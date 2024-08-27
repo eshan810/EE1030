@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 def read_coordinates(output):
-    with open("output", 'r') as file:
+    with open(output, 'r') as file:
         lines = file.readlines()
     
     # Read the coordinates from the file
@@ -27,6 +27,10 @@ def plot_coordinates(coordinates):
     
     # Plot the line BA
     plt.plot([B[0], A[0]], [B[1], A[1]], 'b-', label='Line BA')
+    
+    # Plot the dotted line AC
+    C = points[-1]  # The last point is C
+    plt.plot([A[0], C[0]], [A[1], C[1]], 'r--', label='Line AC')  # Dotted red line
     
     # Plot the points and add labels
     plt.plot(*B, 'bo')  # Point B
