@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  27 AUG 2024 10:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  28 AUG 2024 22:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1773,7 +1773,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.65 Point $\vec C
-                  $ divides the line segment $BA$ in the ratio $3\colon1$ ex...
+                  $ divides  $BA$ in the ratio $3\colon1$ externally,\\ $\th...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1791,8 +1791,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 So, the position vector of $\vec C
-                                       $ is $1.5\vec a-0.5\vec b$.}
+l.72 So, position vector of $\vec C
+                                   $ is $1.5\vec a-0.5\vec b$.}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1804,7 +1804,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 ... position vector of $\vec C$ is $1.5\vec a
+l.72 So, position vector of $\vec C$ is $1.5\vec a
                                                   -0.5\vec b$.}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1817,7 +1817,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 ...vector of $\vec C$ is $1.5\vec a-0.5\vec b
+l.72 ...vector of $\vec C$ is $1.5\vec a-0.5\vec b
                                                   $.}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1826,7 +1826,7 @@ or  <return>  to continue without it.
 <plots/plot.png, id=7, 492.1587pt x 327.3831pt>
 File: plots/plot.png Graphic file (type png)
 <use plots/plot.png>
-Package pdftex.def Info: plots/plot.png  used on input line 76.
+Package pdftex.def Info: plots/plot.png  used on input line 75.
 (pdftex.def)             Requested size: 364.1953pt x 242.25969pt.
 [1
 Non-PDF special ignored!
@@ -1859,12 +1859,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  33970 strings out of 474222
- 656451 string characters out of 5748734
- 1932975 words of memory out of 5000000
+ 656451 string characters out of 5748733
+ 1931975 words of memory out of 5000000
  55428 multiletter control sequences out of 15000+600000
  623437 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,9n,117p,1169b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,10n,117p,1169b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
@@ -1872,7 +1872,7 @@ nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 70518 bytes).
+Output written on main.pdf (2 pages, 70300 bytes).
 PDF statistics:
  65 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
