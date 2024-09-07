@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  15 AUG 2024 22:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  2 SEP 2024 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -22,6 +22,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
+** ATTENTION: Single column mode is not typically used with IEEE publications.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen143
@@ -1273,11 +1274,6 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \c@tracingmulticols=\count373
-
-
-Package multicol Warning: May not work with the twocolumn option on input line 
-143.
-
 \mult@box=\box91
 \multicol@leftmargin=\dimen365
 \c@unbalance=\count374
@@ -1344,7 +1340,8 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \mult@nat@firstbox=\box135
 \colbreak@box=\box136
 \mc@col@check@num=\count382
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count383
 \float@exts=\toks56
@@ -1720,11 +1717,6 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 56
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 1515) in paragraph at lines 72--74
-[]\OT1/txr/m/n/10 The nega-tion of $\OMS/txsy/m/n/10 ^^X \OML/txmi/m/it/10 s \O
-MS/txsy/m/n/10 _ []$ \OT1/txr/m/n/10 is equiv-a-lent to:
- []
-
 ! Undefined control sequence.
 \degree  ->\ifmmode \tcdegree 
                               \else \textdegree \fi 
@@ -1747,16 +1739,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Underfull \hbox (badness 1924) in paragraph at lines 124--126
-\OT1/txr/m/n/10 stan-dard de-vi-a-tion of the $9$ items $\OML/txmi/m/it/10 x[];
- x[]; [] ; x[]$ \OT1/txr/m/n/10 is:
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+[1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -1769,15 +1752,12 @@ Non-PDF special ignored!
 <special> header=pst-grad.pro
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}
-
-
 Non-PDF special ignored!
 <special> ps: /pssetRGBcolor /setrgbcolor load def /pssetCMYKcolor /setcmyk...
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
-
 ]
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 164.
@@ -1794,9 +1774,7 @@ LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10> not available
 
 LaTeX Warning: Command \textgreater invalid in math mode on input line 164.
 
-[2
-
-] (./main.aux)
+[2] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1806,12 +1784,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  33510 strings out of 474222
- 648982 string characters out of 5748734
- 1972975 words of memory out of 5000000
+ 648982 string characters out of 5748733
+ 1952975 words of memory out of 5000000
  54918 multiletter control sequences out of 15000+600000
  622463 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,6n,103p,1172b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,6n,103p,1172b,636s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/f
@@ -1819,7 +1797,7 @@ onts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfont
 s/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 52736 bytes).
+Output written on main.pdf (2 pages, 52569 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  119 compressed objects within 2 object streams

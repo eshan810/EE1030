@@ -18,16 +18,15 @@ void writeCoordinatesToFile(const char* output) {
     fprintf(file, "%.2f %.2f\n", B_x, B_y);
     fprintf(file, "%.2f %.2f\n", A_x, A_y);
 
-    // Define the fractions for the points
-    double fractions[] = {0.3, 0.6, 0.9, 1.5};
+   // Define the fraction for the point
+double fraction = 1.5;
 
-    // Calculate and write the coordinates for the given fractions
-    for (int i = 0; i < 4; ++i) {
-        double fraction = fractions[i];
-        double x = B_x + fraction * (A_x - B_x);
-        double y = B_y + fraction * (A_y - B_y);
-        fprintf(file, "%.2f %.2f\n", x, y);
-    }
+// Calculate the coordinates for the given fraction
+double x = B_x + fraction * (A_x - B_x);
+double y = B_y + fraction * (A_y - B_y);
+
+// Write the coordinates to the file
+fprintf(file, "%.2f %.2f\n", x, y);
 
     fclose(file);
 }
