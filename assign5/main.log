@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  8 SEP 2024 01:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  8 SEP 2024 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2204,16 +2204,13 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 60
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 59--64
-
- []
-
+) (./tables/table.tex)
 <plots/plot.png, id=31, 414.8298pt x 327.3831pt>
 File: plots/plot.png Graphic file (type png)
 <use plots/plot.png>
-Package pdftex.def Info: plots/plot.png  used on input line 76.
+Package pdftex.def Info: plots/plot.png  used on input line 80.
 (pdftex.def)             Requested size: 364.1953pt x 287.43361pt.
+
 [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
@@ -2244,10 +2241,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 55681 strings out of 474222
- 1302777 string characters out of 5748733
- 1977991 words of memory out of 5000000
- 77020 multiletter control sequences out of 15000+600000
+ 55695 strings out of 474222
+ 1303065 string characters out of 5748733
+ 1979035 words of memory out of 5000000
+ 77030 multiletter control sequences out of 15000+600000
  621302 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,13n,109p,1194b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2258,10 +2255,10 @@ xmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 69137 bytes).
+Output written on main.pdf (2 pages, 71532 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

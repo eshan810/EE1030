@@ -59,8 +59,12 @@
 \textbf{Question: }\\
 The point on the $X$ axis which is equidistant from $\brak{-4, 0}$ and $\brak{10, 0}$ is\dots \\
 \solution {
-Let $\vec A=\myvec{a \\ 0}$ be the point on $X$ axis equidistant from
- $\vec B=\myvec{-4\\0}$ and $\vec C=\myvec{10\\0}$.\\
+	\begin{table}[h!]    
+  \centering
+  \input{tables/table.tex}
+  \caption{Variables Used}
+  \label{tab1.1.9.2}
+\end{table}
 \begin{align}
     \brak{\lVert \vec B-\vec A \rVert}^2 &= \brak{\lVert \vec C -\vec A \rVert}^2 \\
     \implies \vec B^{2} + \vec A^{2} - 2 \vec A\vec B^\top &= \vec C^2 + \vec A^2 - 2\vec A\vec C^\top \\
@@ -68,7 +72,7 @@ Let $\vec A=\myvec{a \\ 0}$ be the point on $X$ axis equidistant from
     \implies \myvec{a\\0}\myvec{14 & 0} &= \frac{84}{2}\\
     \implies 14a &= 42\\
     \implies a &= 3\\
-    \therefore \vec A = \myvec{3\\0}
+	\therefore \vec A &= \myvec{3\\0}
     \end{align}
     The point equidistant from $\brak{-4, 0}$ and $\brak{10, 0}$ is $\brak{3,0}$.
     \begin{figure}[!ht]
