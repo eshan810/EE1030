@@ -68,12 +68,13 @@ that $3x = 2y$.\\
 \end{table}
 \begin{align}
 	\norm{ \vec B-\vec P }^2 &= \norm{ \vec A -\vec P }^2 \\
+	\implies \norm{\vec B-\vec P}^2&=\brak{\vec B-\vec P}\brak{\vec B-\vec P}^\top\\
     \implies \vec B^{2} + \vec P^{2} - 2 \vec P\vec B^\top &= \vec A^2 + \vec P^2 - 2\vec P\vec A^\top \\
     \implies \vec P\brak{\vec A^\top - \vec B^\top} &= \frac{\vec A^2 - \vec B^2}{2}\\
     \implies \vec P\brak{\myvec{5 & 1} - \myvec{-1 & 5}} &= \frac{26 - 26}{2} \\
     \implies \myvec{x\\y}\myvec{6 & -4} &= 0\\
     \implies 6x-4y &= 0\\
-    \implies 3x &= 2y\\
+    \implies 3x &= 2y
     \end{align}
     Hence, proved.
 	\begin{figure}[!ht]
