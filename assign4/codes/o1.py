@@ -35,9 +35,9 @@ A, B, C, D = points[0], points[1], points[2], points[3]
 x_range = np.linspace(-15, 15, 100)  # Adjust as necessary to ensure lines extend sufficiently
 # Generating all lines
 x_AB = line_gen(A, B)
-x_BC = line_gen(B, C)
+
 x_CD = line_gen(C, D)
-x_DA = line_gen(D, A)
+
 
 # Line AB
 slope_AB = (B[1] - A[1]) / (B[0] - A[0])
