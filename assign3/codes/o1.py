@@ -43,13 +43,14 @@ plt.plot(x_BC[0, :], x_BC[1, :], 'r--', label='$BC$')
 # Plotting points
 tri_coords = np.block([[A, B, C]])
 plt.scatter(tri_coords[0, :], tri_coords[1, :])
-vert_labels = ['A', 'B', 'C']
-for i, txt in enumerate(vert_labels):
-    plt.annotate(f'{txt}\n({tri_coords[0, i]:.0f}, {tri_coords[1, i]:.0f})',
-                 (tri_coords[0, i], tri_coords[1, i]), 
-                 textcoords="offset points",
-                 xytext=(20, -10),
-                 ha='center')
+
+# Annotating points without using a for loop
+plt.text(tri_coords[0, 0], tri_coords[1, 0], f'A\n({tri_coords[0, 0]:.0f}, {tri_coords[1, 0]:.0f})',
+         fontsize=9, ha='center', va='center')
+plt.text(tri_coords[0, 1], tri_coords[1, 1], f'B\n({tri_coords[0, 1]:.0f}, {tri_coords[1, 1]:.0f})',
+         fontsize=9, ha='center', va='center')
+plt.text(tri_coords[0, 2], tri_coords[1, 2], f'C\n({tri_coords[0, 2]:.0f}, {tri_coords[1, 2]:.0f})',
+         fontsize=9, ha='center', va='center')
 
 # Customize the plot
 ax = plt.gca()
@@ -60,8 +61,5 @@ ax.spines['bottom'].set_visible(False)
 plt.legend(loc='best')
 plt.grid(True)
 plt.axis('equal')
-plt.title('Example: A(0,0) and B(10,10)')
-plt.axhline(0, color='black', linewidth=0.5)
-plt.axvline(0, color='black', linewidth=0.5)
 plt.savefig('../plots/plot.png', format='png', bbox_inches='tight')
 
