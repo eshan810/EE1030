@@ -27,10 +27,10 @@ void computeFourthVertex(float x1, float y1, float x2, float y2, float x3, float
     }
 
     // Write all vertices to the file
-    fprintf(file, "Vertex A: (%.2f, %.2f)\n", x1, y1);
-    fprintf(file, "Vertex B: (%.2f, %.2f)\n", x2, y2);
-    fprintf(file, "Vertex C: (%.2f, %.2f)\n", x3, y3);
-    fprintf(file, "Vertex D: (%.2f, %.2f)\n", x4, y4);
+    fprintf(file, "%.2f %.2f\n", x1, y1);
+    fprintf(file, "%.2f %.2f\n", x2, y2);
+    fprintf(file, "%.2f %.2f\n", x3, y3);
+    fprintf(file, "%.2f %.2f\n", x4, y4);
 
     // Close the file
     fclose(file);
