@@ -17,9 +17,9 @@ int main() {
     }
 
     // Write the coordinates of B, C, and A to the file
-    fprintf(file, "B(%.2f, %.2f)\n", B_x, B_y);
-    fprintf(file, "C(%.2f, %.2f)\n", C_x, C_y);
-    fprintf(file, "A(%.2f, %.2f)\n", A_x, A_y);
+    fprintf(file, "%.2f %.2f\n", B_x, B_y);
+    fprintf(file, "%.2f %.2f\n", C_x, C_y);
+    fprintf(file, "%.2f %.2f\n", A_x, A_y);
 
     // Close the file
     fclose(file);
