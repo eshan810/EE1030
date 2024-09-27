@@ -62,25 +62,38 @@ divide it into triangles $ACB$ and $ABD$ by the diagonal $BD$. Construct the tri
 $BD'C'$ similar to $\triangle BDC$ with scale factor $\frac{4}{3}$ . Draw the line segment $D'A'$ parallel to
 $DA$ where $A'$ lies on extended side $BA$. Is $A'BC'D'$ a parallelogram?\\
 \solution { 
+\begin{table}[h!]    
+  \centering
+  \input{tables/table.tex}
+  \caption{Input parameters}
+  \label{tab1.1.9.2}
+\end{table}
+
+
+\begin{figure}[!ht]
+    \centering
+	\includegraphics[width=1\textwidth]{plots/plot.png}
+    \caption{$||^{gm} ABCD$ and $||^{gm} A'BC'D'$}
+    \label{fig:plot}
+\end{figure}  
+\\
+\\
+\\
+
 $ABCD$ is a parallelogram,
 \begin{align}
 \implies AB\parallel DC, AB&=DC\\
-\implies AD\parallel BC, AD&=BC
- \end{align}
- 
- $\triangle BDC\sim \triangle BD'C'\brak{Given}$\\
-     scale factor$=\frac{4}{3}$
-     \begin{align}
+\implies AD\parallel BC, AD&=BC\\
+  \triangle BDC\sim \triangle BD'C'\brak{Given}\\
+     scale factor=\frac{4}{3}\\
          \implies \frac{BD'}{BD}&=\frac{4}{3}\\
          \implies \frac{BC'}{BC}&=\frac{4}{3}\\
          \implies \angle BCD &=\angle BC'D'\\
         \implies \angle BDC&=\angle BD'C'\\
         \therefore CD\parallel C'D'\\
-BC'\parallel BC
-     \end{align}
-     Given, $A'D'\parallel AD$
-     \begin{align}
-         From \triangle BA'D' & \triangle BAD,\\
+BC'\parallel BC\\
+         Given, $A'D'\parallel AD$\\
+              From \triangle BA'D' & \triangle BAD,\\
          \implies \angle ABD&=\angle A'BD'\\
          \implies \angle BDA&=\angle BD'A'\\
          \implies \angle BAD&=\angle BA'D'
@@ -98,12 +111,6 @@ BC'\parallel BC
          Similarly, BA'\parallel C'D', BA'= C'D'
      \end{align}
     So, quadrilateral $A'BC'D'$ is a parallelogram.
-     \begin{figure}[!ht]
-    \centering
-	\includegraphics[width=1\textwidth]{plots/plot.png}
-    \caption{$||^{gm} ABCD$ and $||^{gm} A'BC'D'$}
-    \label{fig:plot}
-\end{figure}  
    }
 \end{document}
 
