@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  30 SEP 2024 19:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  30 SEP 2024 21:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2205,14 +2205,10 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 60
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) (./tables/table.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.75 \end{multline}
+l.77 \end{multline}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2223,14 +2219,14 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...ec {1&0\\0&0}\myvec {1\\1}}}\right )
                                                   
-l.75 \end{multline}
+l.77 \end{multline}
                    
 I'm ignoring a \right that had no matching \left.
 
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.75 \end{multline}
+l.77 \end{multline}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2241,14 +2237,9 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...ec {1&0\\0&0}\myvec {1\\1}}}\right )
                                                   
-l.75 \end{multline}
+l.77 \end{multline}
                    
 I'm ignoring a \right that had no matching \left.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
-
- []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 77--79
@@ -2256,7 +2247,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
  []
 
 
-Underfull \vbox (badness 4647) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+
+Underfull \vbox (badness 1281) has occurred while \output is active []
 
  [1
 Non-PDF special ignored!
@@ -2283,21 +2279,21 @@ Non-PDF special ignored!
 ! Limit controls must follow a math operator.
 <argument> ... {x^2}{2}+2x-\frac {x^3}{3}}\limits 
                                                   _{-1}^{2} \ \\ &= \brak {\...
-l.93 \end{align}
+l.95 \end{align}
                 
 I'm ignoring this misplaced \limits or \nolimits command.
 
 ! Limit controls must follow a math operator.
 <argument> ... {x^2}{2}+2x-\frac {x^3}{3}}\limits 
                                                   _{-1}^{2} \ \\ &= \brak {\...
-l.93 \end{align}
+l.95 \end{align}
                 
 I'm ignoring this misplaced \limits or \nolimits command.
 
 <plots/plot.png, id=45, 406.1574pt x 469.0323pt>
 File: plots/plot.png Graphic file (type png)
 <use plots/plot.png>
-Package pdftex.def Info: plots/plot.png  used on input line 98.
+Package pdftex.def Info: plots/plot.png  used on input line 100.
 (pdftex.def)             Requested size: 364.1953pt x 420.57214pt.
 [2] [3 <./plots/plot.png>] (./main.aux)
  ***********
@@ -2321,7 +2317,7 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 76735 bytes).
+Output written on main.pdf (3 pages, 76862 bytes).
 PDF statistics:
  103 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream

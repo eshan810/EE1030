@@ -67,15 +67,17 @@ the $x-axis$.\\
   \label{tab1.1.9.2}
 \end{table}
 \\
-Substituting the input parameters in:-
+The point of intersection of the line with the parabola is $x_i=h+k_i m$,\\
+where,$k_i$ is a constant and is calculated as follows:-
 $$k_i=\frac{1}{m^\top Vm}\brak{-m^\top \brak{Vh+u}\pm \sqrt{\sbrak{m^\top \brak{Vh+u}}^2-g\brak{h}\brak{m^\top Vm}}}$$\\
+Substituting the input parameters in $k_i$,
 \begin{multline}
      k_i =\frac{1}{\myvec{1&1}\myvec{1&0\\0&0}\myvec{1\\1}}\brak{-\myvec{1&1}\brak{\myvec{1&0\\0&0}\myvec{0\\2}+\myvec{0\\ \frac{-1}{2}}}\pm \\
      \sqrt{\sbrak{\myvec{1&1}\brak{\myvec{1&0\\0&0}\myvec{0\\2}+\myvec{0\\ \frac{-1}{2}}}}^2-g\brak{h}\brak{\myvec{1&1}\myvec{1&0\\0&0}\myvec{1\\1}}}} 
 \end{multline}
 We get,\\
 $$k_i= -1, 2$$
-Substituting $k_i$ in $x_i=h+k_i m$ for point of intersection, we get,\\
+Substituting $k_i$ in $x_i=h+k_i m$  we get,\\
 \begin{align}
      x_1&=\myvec{0\\2}+\brak{-1}\myvec{1\\1}\\
     \implies x_1 &=\myvec{0\\2} + \myvec{-1\\-1}\\
