@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  29 SEP 2024 19:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  30 SEP 2024 19:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2256,7 +2256,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--79
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4647) has occurred while \output is active []
 
  [1
 Non-PDF special ignored!
@@ -2283,21 +2283,21 @@ Non-PDF special ignored!
 ! Limit controls must follow a math operator.
 <argument> ... {x^2}{2}+2x-\frac {x^3}{3}}\limits 
                                                   _{-1}^{2} \ \\ &= \brak {\...
-l.89 \end{align}
+l.93 \end{align}
                 
 I'm ignoring this misplaced \limits or \nolimits command.
 
 ! Limit controls must follow a math operator.
 <argument> ... {x^2}{2}+2x-\frac {x^3}{3}}\limits 
                                                   _{-1}^{2} \ \\ &= \brak {\...
-l.89 \end{align}
+l.93 \end{align}
                 
 I'm ignoring this misplaced \limits or \nolimits command.
 
 <plots/plot.png, id=45, 406.1574pt x 469.0323pt>
 File: plots/plot.png Graphic file (type png)
 <use plots/plot.png>
-Package pdftex.def Info: plots/plot.png  used on input line 94.
+Package pdftex.def Info: plots/plot.png  used on input line 98.
 (pdftex.def)             Requested size: 364.1953pt x 420.57214pt.
 [2] [3 <./plots/plot.png>] (./main.aux)
  ***********
@@ -2308,9 +2308,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 55699 strings out of 474222
- 1303128 string characters out of 5748733
- 1987069 words of memory out of 5000000
+ 55703 strings out of 474222
+ 1303178 string characters out of 5748733
+ 1991069 words of memory out of 5000000
  77031 multiletter control sequences out of 15000+600000
  622678 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2321,10 +2321,10 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 76382 bytes).
+Output written on main.pdf (3 pages, 76735 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
