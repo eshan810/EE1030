@@ -31,6 +31,7 @@ B = points[1]
 C = points[2]
 D = points[3]
 q = points[4]
+
 # Setting up the plot
 fig = plt.figure()
 ax = fig.add_subplot(111, aspect='equal')
@@ -47,8 +48,6 @@ def extend_line(point1, point2, factor=2):
     extended_start = point1 - factor * direction
     extended_end = point2 + factor * direction
     return np.array([extended_start, extended_end])
-    
-
 
 # Extend lines
 extended_AB = extend_line(A, B)
@@ -57,8 +56,6 @@ extended_CD = extend_line(C, D)
 # Plot the extended lines with different colors
 plt.plot([extended_AB[0][0], extended_AB[1][0]], [extended_AB[0][1], extended_AB[1][1]], linestyle='--', color='orange', label='Tangent')
 plt.plot([extended_CD[0][0], extended_CD[1][0]], [extended_CD[0][1], extended_CD[1][1]], linestyle='--', color='r', label='Normal')
-
-
 
 # Generate x values for the curve y = sqrt(3x - 2) and extend it to x = 10
 x_curve = np.linspace(0, 10, 400)
@@ -77,6 +74,29 @@ plt.annotate(f'q\n({q[0]:.2f}, {q[1]:.2f})',
              fontsize=9,
              color='blue')
 
+# Add equations for tangent and normal
+tangent_slope = 2  # Replace with the actual slope
+normal_slope = -0.5  # Replace with the actual slope
+tangent_y_intercept = -23.0 / 24.0  # Replace with the actual y-intercept
+normal_y_intercept = 113.0 / 96.0  # Replace with the actual y-intercept
+
+# Annotate tangent line equation
+tangent_eq = f'y = {tangent_slope}x + {tangent_y_intercept:.2f}'
+plt.annotate(tangent_eq,
+             xy=(extended_AB[0][0], tangent_slope * extended_AB[0][0] + tangent_y_intercept),
+             textcoords="offset points",
+             xytext=(10, 10),  # Position offset for visibility
+             fontsize=9,
+             color='orange')
+
+# Annotate normal line equation
+normal_eq = f'y = {normal_slope}x + {normal_y_intercept:.2f}'
+plt.annotate(normal_eq,
+             xy=(extended_CD[0][0], normal_slope * extended_CD[0][0] + normal_y_intercept),
+             textcoords="offset points",
+             xytext=(-50, -20),  # Position offset for visibility
+             fontsize=9,
+             color='red')
 
 # Customize the plot appearance
 ax = plt.gca()

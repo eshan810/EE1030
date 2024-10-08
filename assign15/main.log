@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  7 OCT 2024 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  8 OCT 2024 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2231,11 +2231,11 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@refangle 0.  def grestore  e...
 ]
-<plots/plot.png, id=49, 326.6604pt x 281.1303pt>
+<plots/plot.png, id=49, 362.7954pt x 281.1303pt>
 File: plots/plot.png Graphic file (type png)
 <use plots/plot.png>
 Package pdftex.def Info: plots/plot.png  used on input line 99.
-(pdftex.def)             Requested size: 364.1953pt x 313.43532pt.
+(pdftex.def)             Requested size: 364.1953pt x 282.22348pt.
  [2] [3 <./plots/plot.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -2258,7 +2258,7 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 69121 bytes).
+Output written on main.pdf (3 pages, 70963 bytes).
 PDF statistics:
  104 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
