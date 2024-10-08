@@ -1,0 +1,106 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{03/09/2020-Shift 2}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{15}
+    \item If $\int \sin^{-1}\brak{{\sqrt{\frac{x}{1+x}}}} \,dx=A\brak{x}\tan^{-1}\brak{{\sqrt{x}}}+B\brak{x}+C$, where $C$ is a constant of integration, then the ordered pair $\brak{A\brak{x},B\brak{x}}$ can be$\colon$
+        \begin{enumerate}
+            \item $\brak{x+1,-\sqrt{x}}$
+            \item $\brak{x-1,-\sqrt{x}}$
+            \item $\brak{x+1,\sqrt{x}}$
+            \item $\brak{x-1,\sqrt{x}}$
+        \end{enumerate}
+    \item If the sum of the series $20+19\frac{3}{5}+19\frac{1}{5}+18\frac{4}{5}+\dots$ upto $n^{th}$ term is $488$ and the $n^{th}$ term is negative, then$\colon$
+        \begin{enumerate}
+            \item $n=60$
+            \item $n=41$
+            \item $n^{th}$ term is $-4$
+            \item $n^{th}$ term is $-4\frac{2}{5}$
+        \end{enumerate}
+    \item Let $p,q,r$ be three statements such that the truth value of $\brak{p\wedge q}\rightarrow\brak{\sim p\vee r}$ is $F$. The truth values of $p,q,r$ are respectively$\colon$
+        \begin{enumerate}
+            \item $F,T,F$
+            \item $T,F,T$
+            \item $T,T,F$
+            \item $T,T,T$
+        \end{enumerate}
+    \item If the surface area of the cube is increasing at a rate of $3.6 cm^2/sec$,retaining its shape; then the rate of change of volume $\brak{in cm^2/sec}$, when the length of the cube is $10 cm$ is$\colon$
+        \begin{enumerate}
+            \item $9$
+            \item $10$
+            \item $18$
+            \item $20$
+        \end{enumerate}
+    \item   Let $R_1$ and $R_2$ be two relations defined as follows$\colon$\\
+            $R_1=\cbrak{\brak{a,b}\in R^2\colon a^2+b^2 \in Q}$ and\\
+            $R_2=\cbrak{\brak{a,b}\in R^2\colon a^2+b^2 \notin Q}$, where $Q$ is set of all rational numbers. Then$\colon$
+        \begin{enumerate}
+            \item $R_1$ is transitive but $R_2$ is not transitive
+            \item $R_1$ and $R_2$  are both transitive
+            \item $R_2$ is transitive but $R_1$ is not transitive
+            \item Neither $R_1$ nor $R_2$ is transitive
+        \end{enumerate}
+    \item If $m$ arithmetic means\brak{A.Ms} and three geometric means \brak{G.Ms} are inserted between $3$ and $243$ such that the $4^{th} A.M.$ is equal to $2^{nd}G.M.$, then $m$ is equal to\dots
+    \item Let a plane $P$ contain two lines $\overrightarrow{r}=\hat{i}+\lambda\brak{\hat{i}+\hat{j}},\lambda\in R$ and $\overrightarrow{r}= -\hat{j}+\mu\brak{\hat{j}-\hat{k}},\mu\in R$. If $Q\brak{\alpha,\beta,\gamma}$ is the foot of the perpendicular drawn from the point $M\brak{1,0,1}$ to $P$, then $3\brak{\alpha,\beta,\gamma}$ equals\dots
+    \item Let $S$ be set of all integer solutions $\brak{x,y,z}$, of the system of equations\\
+        $x-2y+5z=0$\\
+        $-2x+4y+z=0$\\
+        $-7x+14y+9z=0$\\
+        such that $15\leq x^2+y^2+z^2\leq 150$. Then the number of elements in the set $S$ is equal to \dots
+    \item The total number of $3-$digit number numbers, whose sum of digits is $10$, is\dots
+    \item If the tangent at the curve, $y=e^x$ at a point $\brak{c,e^c}$ and the normal to the parabola, $y^2=4x$ at the point $\brak{1,2}$ intersect at the same point on the $x-axis$, then the value of $c$ is\dots 
+    
+\end{enumerate}
+\end{document}
