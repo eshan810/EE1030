@@ -1,0 +1,172 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{25/06/2022-Shift 1}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+    \item Let a circle $C$ touch the lines $L_1\colon\,4x-3y+K_1=0$ and $L_2\colon\,4x-3y+K_2=0,K_1,K_2\in R.$ If a line passing through the centre of the circle $C$ intersects $L_1$ at $\brak{-1,2}$ and $L_2$ at $\brak{3,-6}$, then the equation of circle $C$ is 
+        \begin{enumerate}
+            \item $\brak{x-1}^2+\brak{y-2}^2=4$
+            \item $\brak{x+1}^2+\brak{y-2}^2=4$
+            \item $\brak{x-1}^2+\brak{y+2}^2=16$
+            \item $\brak{x-1}^2+\brak{y-2}^2=16$
+        \end{enumerate}
+    \item The value of $\int_{0}^{\pi}\frac{e^{\cos{x}}\sin{x}}{\brak{1+\cos^2{x}}\brak{e^{\cos{x}}+e^{-\cos{x}}}} \, dx$ is equal to 
+        \begin{enumerate}
+            \item $\frac{\pi^2}{4}$
+            \item $\frac{\pi^2}{2}$
+            \item $\frac{\pi}{4}$
+            \item $\frac{\pi}{2}$
+        \end{enumerate}
+    \item Let $a,b\,and\,c$ be the length of sides of triangle $ABC$ such that $\frac{a+b}{7}=\frac{b+c}{8}=\frac{c+a}{9}$. If $r$ and $R$ are the radius of incircle and radius of circumcircle of the triangle $ABC$, respectively then the value of $\frac{R}{r}$ is equal to
+        \begin{enumerate}
+            \item $\frac{5}{2}$
+            \item $2$
+            \item $\frac{3}{2}$
+            \item $1$
+        \end{enumerate}
+    \item Let $f\colon\,N \to R$ be a function such that $f\brak{x+y}=2f\brak{x}f\brak{y}$ for natural numbers $x$ and $y$. If $f\brak{1}=2$, then the value of $\alpha$ for which
+    $$\sum_{k=1}^{10}f\brak{\alpha+k}=\frac{512}{3}\brak{2^{20}-1}$$
+    holds, is
+        \begin{enumerate}
+            \item $2$
+            \item $3$
+            \item $4$
+            \item $6$
+        \end{enumerate}
+    \item Let $A$ be a $3\times 3$ real matrix such that $A\myvec{1\\1\\0}=\myvec{1\\1\\0};A\myvec{1\\0\\1}=\myvec{-1\\0\\1}$ and $A\myvec{0\\0\\1}=\myvec{1\\1\\2}$.
+    If $X=\brak{x_1,x_2,x_3}^\top$ and $I$ is an identity matrix of order , then the system $\brak{A-2I}X=\myvec{4\\1\\1}$ has
+        \begin{enumerate}
+            \item no solution
+            \item infinitely many solutions
+            \item unique solution
+            \item exactly two solutions
+        \end{enumerate}
+    \item Let $f\colon\, R\to R$ be defined as $f\brak{x}=x^3+x-5$. If $g\brak{x}$ is a function such that $f\brak{g\brak{x}}=x,\forall x\in R$, then $g\prime\brak{63}$ is equal to
+        \begin{enumerate}
+            \item $\frac{1}{49}$
+            \item $\frac{3}{49}$
+            \item $\frac{43}{49}$
+            \item $\frac{91}{49}$
+        \end{enumerate}
+    \item Consider the following two propositions $\colon$\\
+        $P1\colon\,\sim\brak{p \to \sim q}$\\
+        $P2\colon\,\brak{p\wedge \sim q}\wedge\brak{\brak{\sim p}\vee q}$\\
+        If the proposition $p \to \brak{\brak{\sim p}\vee q}$ is evaluated as FALSE, then $\colon$
+        \begin{enumerate}
+            \item $P1$ is TRUE and $P2$ is FALSE
+            \item $P1$ is FALSE and $P2$ is TRUE
+            \item Both $P1$ and $P2$ are FALSE 
+            \item Both $P1$ and $P2$ are TRUE
+        \end{enumerate}
+    \item If $\frac{1}{2\cdot3^{10}}+\frac{1}{2^2\cdot3^{9}}+\dots +\frac{1}{2^{10}\cdot3}=\frac{K}{2^{10}\cdot3^{10}}$, then the remainder when $K$ is divided by $6$ is
+        \begin{enumerate}
+            \item $1$
+            \item $2$
+            \item $3$
+            \item $5$
+        \end{enumerate}
+    \item Let $f\brak{x}$ be a polynomial function such that $f\brak{x}+f\prime\brak{x}+f\prime\prime\brak{x}=x^5+64$. Then, the value of $\lim_{x \to 1}\frac{f\brak{x}}{x-1}$
+        \begin{enumerate}
+            \item $-15$
+            \item $-60$
+            \item $60$
+            \item $15$
+        \end{enumerate}
+    \item Let $E_1$ and $E_2$ be two events such that the conditional probabilities \\$P\brak{E_1\mid E_2}=\frac{1}{2},P\brak{E_2\mid E_1}=\frac{3}{4}$ and $P\brak{E_1\cap E_2}=\frac{1}{8} $  Then $\colon$
+        \begin{enumerate}
+            \item $P\brak{E_1\cap E_2}=P\brak{E_1}\cdot P\brak{E_2}$
+            \item $ P\brak{E\prime_1\cap E\prime_2}=P\brak{E\prime_1}\cdot P\brak{E\prime_2} $
+            \item $P\brak{E_1\cap E\prime_2}=P\brak{E_1}\cdot P\brak{E_2}$
+            \item $P\brak{E\prime_1\cap E_2}=P\brak{E_1}\cdot P\brak{E_2}$
+        \end{enumerate}
+    \item Let $A=\myvec{0&-2\\2&0}$.If $M$ and $N$ are two matrices given by $M=\sum_{k=1}^{10}A^{2k}$ and $N=\sum_{k=1}^{10}A^{2k-1}$ then $MN^2$ is
+        \begin{enumerate}
+            \item a non-identity symmetric matrix
+            \item a skew-symmetric matrix
+            \item neither symmetric and skew-symmetric matrix
+            \item an identity matrix
+        \end{enumerate}
+    \item Let $g\colon\,\brak{0,\infty}\to R$ be a differentiable function such that
+        $$\int \brak{\frac{x\brak{\cos{x}-\sin{x}}}{e^x+1}+\frac{g\brak{x}\brak{e^x+1-xe^x}}{\brak{e^x+1}^2}} \, dx=\frac{xg\brak{x}}{e^x+1}+c,$$
+        for all $x\textgreater 0$, where $c$ is an arbitrary constant. Then,
+        \begin{enumerate}
+            \item $g$ is decreasing in $\brak{0,\frac{\pi}{4}}$
+            \item $g\prime$ is increasing in $\brak{0,\frac{\pi}{4}}$
+            \item $g+g\prime$ is increasing in $\brak{o,\frac{\pi}{2}}$
+            \item $g-g\prime$ is increasing in $\brak{0,\frac{\pi}{2}}$
+        \end{enumerate}
+    \item Let $f\colon\,R \to R$ and $g\colon\,R \to R$ be two functions defined by $f\brak{x}=\log_{e}\brak{x^2+1}-e^{-x}+1$ and $g\brak{x}=\frac{1-2e^{2x}}{e^x}$.Then, for which of the following range of $\alpha$, the inequality
+        $$f\brak{g\brak{\frac{\brak{\alpha-1}^2}{3}}}\textgreater f\brak{g\brak{\alpha-\frac{5}{3}}}\, holds?$$ 
+        \begin{enumerate}
+            \item $\brak{2,3}$
+            \item $\brak{-2,-1}$
+            \item $\brak{1,2}$
+            \item $\brak{-1,1}$
+        \end{enumerate}
+    \item Let $\overrightarrow{a}=a_1\hat{i}+a_2\hat{j}+a_3\hat{k}\,a_i\textgreater 0,i=1,2,3$ be a vector which makes equal angles with the coordinate axes $OX,OY$ and $OZ$. Also, let the projection of $\overrightarrow{a}$ on the vector $3\hat{i}+4\hat{j}$ be $7$. Let $\overrightarrow{b}$ be a vector obtained by rotating $\overrightarrow{a}$ with $90\degree$. If $\overrightarrow{a},\overrightarrow{b}$ and $x-axis$ are coplanar, then the projection of a vector $\overrightarrow{b}$ on $3\hat{i}+4\hat{j}$ is equal to
+        \begin{enumerate}
+            \item $\sqrt{7}$
+            \item  $\sqrt{2}$
+            \item $2$
+            \item $7$
+        \end{enumerate}
+    \item Let $y=y\brak{x}$ be the solution of differential equation $\brak{x+1}y\prime-y=e^{3x}\brak{x+1}^2,$ with $y\brak{0}=\frac{1}{3}$. Then, the point $x=-\frac{4}{3}$ for the curve $y=y\brak{x}$ is $\colon$
+        \begin{enumerate}
+            \item not a critical point
+            \item a point of local maxima
+            \item a point of local minima
+            \item a point of inflection
+        \end{enumerate}        
+\end{enumerate}
+\end{document}
