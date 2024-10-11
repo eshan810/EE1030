@@ -1,0 +1,174 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{31/01/2023-Shift 1}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+    \item If the maximum distance of  normal to the ellipse $\frac{x^2}{4}+\frac{y^2}{b^2}=1,\,b\textless 2$, from the origin is $1$, then the eccentricity of the ellipse is $\colon$
+        \begin{enumerate}
+            \item $\frac{1}{\sqrt{2}}$
+            \item $\frac{\sqrt{3}}{2}$
+            \item $\frac{1}{2}$
+            \item $\frac{\sqrt{3}}{4}$
+        \end{enumerate}
+    \item For all $z\in C$ on the curve $C_1\colon\abs{z}=4,$ let the locus of the point $z+\frac{1}{z}$ be the curve $C_2$. Then 
+        \begin{enumerate}
+            \item the curve s $C_1$ and  $C_2$ intersect at $4$ points
+            \item the curve $C_1$ lies inside $C_2$
+            \item the curves $C_1$ and $C_2$ intersect at $2$ points
+            \item the curve $C_2$ lies inside $C_1$ 
+        \end{enumerate}
+    \item A wire of length $20\,m$ is to be cut into two pieces. A piece of length $l_1$ is bent into the shape of area $A_1$ and the other piece if length $l_2$ is made into circle of area $A_2$. If $2A_1+3A_2$ is minimum then $\brak{\pi l_1}\colon l_2$ is equal to $\colon$
+        \begin{enumerate}
+            \item $6\colon1$
+            \item $3\colon1$
+            \item $1\colon6$
+            \item $4\colon1$
+        \end{enumerate}
+    \item For the system of linear equations\\
+            $x+y+z=6$\\
+            $\alpha x+\beta y+7z=3$\\
+            $x+2y+3z=14$,\\
+            which of the following is NOT true?
+        \begin{enumerate}
+            \item If $\alpha=\beta=7$, then the system has no solution
+            \item If $\alpha=\beta$ and $\alpha\neq7$ then the system has a unique solution 
+            \item There is a unique point $\brak{\alpha,\beta}$ on the line $x+2y+18=0$ for which the system has infinitely many solutions
+            \item For every point $\brak{\alpha,\beta}\neq\brak{7,7}$ on the line $x-2y+7=0$, the system has infinitely many solutions
+        \end{enumerate}
+    \item Let the shortest distance between the lines \\
+            $L\colon\frac{x-5}{-2}=\frac{y-\lambda}{0}=\frac{z+\lambda}{1},\lambda\geq0$ and $L_1\colon x+1=y-1=4-z$ be $2\sqrt{6}$. If $\brak{\alpha,\beta,\gamma}$ lies on $L$, then which of the following is NOT possible ?
+        \begin{enumerate}
+            \item $\alpha+2\gamma=24$
+            \item $2\alpha+\gamma=7$
+            \item $2\alpha-\gamma=9$
+            \item $\alpha-2\gamma=19$
+        \end{enumerate}
+    \item Let $y=f\brak{x}$ represent a parabola with focus $\brak{-\frac{1}{2},0}$ and directrix $y=-\frac{1}{2}$. Then\\
+    $S=\cbrak{x\in R\colon\tan^{-1}\brak{\sqrt{f\brak{x}}+\sin^{-1}\brak{\sqrt{f\brak{x}+1}}}=\frac{\pi}{2}}\colon$
+        \begin{enumerate}
+            \item contains exactly two elements
+            \item contains exactly one element 
+            \item is an infinite set
+            \item is an empty set
+        \end{enumerate}
+    \item Let $A=\myvec{1&0&0\\0&4&-1\\0&12&-3}$. Then the sum of the diagonal elements of the matrix $\brak{A+I}^{11}$ is equal to $\colon$
+        \begin{enumerate}
+            \item $6144$
+            \item $4094$
+            \item $4097$
+            \item $2050$
+        \end{enumerate}
+    \item Let $R$ be a relation $N\times N$ defined by $\brak{a,b}R\brak{c,d}$ if and only if $ad\brak{b-c}=bc\brak{a-d}.$ Then $R$ is 
+        \begin{enumerate}
+            \item symmetric but neither reflexive nor transitive
+            \item transitive but neither reflexive nor symmetric
+            \item reflexive and symmetric but not transitive
+            \item symmetric and transitive but not reflexive 
+        \end{enumerate}
+    \item Let \\
+        $y=f\brak{x}=\sin^{3}\brak{\frac{\pi}{3}\brak{\cos{\brak{\frac{\pi}{3\sqrt{2}}\brak{-4x^3+5x^2+1}^{\frac{3}{2}}}}}}$\\
+        Then , at $x=1$,
+            \begin{enumerate}
+                \item $2y\prime +\sqrt{3}\pi^2y=0$
+                \item $2y\prime+3\pi^2y=0$
+                \item $\sqrt{2}y\prime-3\pi^2y=0$
+                \item $y\prime+3\pi^2y=0$
+            \end{enumerate}
+    \item If sum and product of four positive consecutive terms of a $G.P.$, are $126$ and $1296$, respectively, then the sum of common ratios of all such $GPs$ is $\colon$
+        \begin{enumerate}
+            \item $7$
+            \item $\frac{9}{2}$
+            \item $3$
+            \item $14$
+        \end{enumerate}
+    \item The number of real roots of the equation $\sqrt{x^2-4x+3}+\sqrt{x^2-9}=\sqrt{4x^2-14x+6}$, is $\colon$
+        \begin{enumerate}
+            \item  $0$
+            \item $1$
+            \item $3$
+            \item $2$
+        \end{enumerate}
+    \item Let a differentiable function $f$ satisfy $f\brak{x}+\int_{3}^{x}\frac{f\brak{t}}{t} \, dt=\sqrt{x+1},x\geq 3$. Then $12f\brak{8}$ is equal to $\colon$
+        \begin{enumerate}
+            \item $34$
+            \item $19$
+            \item $17$
+            \item $1$
+        \end{enumerate}
+    \item If the domain of the function $f\brak{x}=\frac{\sbrak{x}}{1+x^2}$, where $\sbrak{x}$ is greatest integer $\leq x$, is $\left[2,6 \right)$, then its range is 
+        \begin{enumerate}
+            \item $\left(\frac{5}{26},\frac{2}{5} \right]-\cbrak{\frac{9}{29},\frac{27}{109},\frac{18}{89},\frac{9}{53}}$
+            \item $\left(\frac{5}{26},\frac{2}{5} \right]$
+            \item $\left(\frac{5}{37},\frac{2}{5} \right]-\cbrak{\frac{9}{29},\frac{27}{109},\frac{18}{89},\frac{9}{53}}$
+            \item $\left(\frac{5}{37},\frac{2}{5} \right]$
+        \end{enumerate}
+    \item Let $\overrightarrow{a}=2\hat{i}+\hat{j}+\hat{k}$ and $\overrightarrow{b}$ and $\overrightarrow{c}$ be two nonzero vectors such that $\abs{\overrightarrow{a}+\overrightarrow{b}+\overrightarrow{c}}=\abs{\overrightarrow{a}+\overrightarrow{b}-\overrightarrow{c}}$ and $\overrightarrow{b}\cdot\overrightarrow{c}=0$. Consider the following two statements $\colon$\\
+    $\brak{A}\,\abs{\overrightarrow{a}+\lambda\overrightarrow{c}}\geq\abs{\overrightarrow{a}}$ for all $\lambda\in R$\\
+    $\brak{B}\,\overrightarrow{a}$ and $\overrightarrow{c}$ are always parallel 
+        \begin{enumerate}
+            \item only $\brak{B}$ is correct
+            \item neither $\brak{A}$ nor $\brak{B}$ is correct
+            \item only $\brak{A}$ is correct
+            \item both $\brak{A}$ and $\brak{B}$ are correct
+        \end{enumerate}
+    \item Let $\alpha\in\brak{0,1}$ and $\beta=\log_{e}\brak{1-\alpha}$. Let $P_n\brak{x}=x+\frac{x^2}{2}+\frac{x^3}{3}+\dots+\frac{x^n}{n},x\in\brak{0,1}$.\\
+    Then, the integral $\int_{0}^{\alpha}\frac{t^{50}}{1-t} \, dt$ is equal to $\colon$
+        \begin{enumerate}
+            \item $\beta-P_{50\brak{\alpha}}$
+            \item $-\brak{\beta+P_{50}\brak{\alpha}}$
+            \item $P_{50}\brak{\alpha}-\beta$
+            \item $\beta+P_{50}\brak{\alpha}$
+        \end{enumerate}
+\end{enumerate}
+\end{document}
