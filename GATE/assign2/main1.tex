@@ -1,0 +1,237 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2007-AE- 51-68}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{51}
+    \item Combustion between fuel \brak{octane} and oxidizer \brak{air} occurs inside a combustor with the following stoichiometric chemical reaction $\colon$
+    $$2C_{8}H_{18}+\brak{25O_2+94N_2}\longrightarrow 16CO_2+18H_2O+94N_2$$
+    The atomic weights of carbon \brak{C}, hydrogen \brak{H},oxygen \brak{O}, and nitrogen \brak{N} are $12,1,16,\, and\,14$, respectively. If the combustion takes place  with the fuel to air ratio $0.028$, then the equivalence ratio of the fuel-oxidizer mixture is
+    \begin{enumerate}
+        \item $0.094$
+        \item $0.422$
+        \item $0.721$
+        \item $2.371$
+    \end{enumerate}
+    \item The von Mises yield criteria or the maximum distortion energy criterion for a plane stress problem with $\sigma_1$ and $\sigma_2$ as the principal stresses in the plane, and $\sigma_i$ as the yield stress, requires
+    \begin{enumerate}
+        \item $\sigma_1^2-\sigma_1\sigma_2+\sigma_2^2\leq \sigma_i^2$
+        \item $\abs{\sigma_1-\sigma_2}\leq\sigma_i$
+        \item $\abs{\sigma_1}\leq \sigma_i$
+        \item $\abs{\sigma_2}\leq\sigma_i$
+    \end{enumerate}
+    \item An Euler-Bernoulli beam having a rectangular cross-section, as shown in the figure, is subjected to a non-uniform bending moment along its length. $V_z=\frac{dM_y}{dx}$. The shear stress distribution $\tau_{xz}$ across its cross- section is given by 
+
+   \begin{tikzpicture}
+    % Draw the rectangle
+    \draw[thick] (0,0) rectangle (2,4);
+    
+    % Draw the vertical line inside the rectangle
+    \draw[thick] (1, 4) -- (1, 2);
+
+    % Draw the vertical arrow (Vz) with ultra thickness
+    \draw[->, ultra thick] (1, 4) -- (1, 5.5) node[anchor=south] {$V_z$};
+
+    % Draw the horizontal arrow (y direction)
+    \draw[->, thick] (2, 2) -- (4, 2) node[anchor=west] {$y$};
+
+    % Label the width (b) and height (h)
+    \draw[<->, thick] (0, -0.5) -- (2, -0.5) node[midway, anchor=north] {$b$};
+    \draw[<->, thick] (-0.5, 0) -- (-0.5, 4) node[midway, anchor=east] {$h$};
+
+    % Label the z-axis
+    \draw[->, thick] (0, 0) -- (0, 5.5) node[anchor=west] {$z$};
+
+\end{tikzpicture}
+    \begin{enumerate}
+        \item $\tau_{xz}=\frac{V_z}{2I_y}\frac{z}{\brak{\frac{h}{2}}}$
+        \item $\tau_{xz}=\frac{V_z\brak{\frac{h}{2}}^2}{2I_y}\brak{1-\frac{z^2}{\brak{\frac{h}{2}}^2}}$
+        \item $\tau_{xz}=\frac{V_z}{2I_y}\brak{\frac{z}{\brak{\frac{h}{2}}}}^2$
+        \item $\tau{_xz}=\frac{V_z\brak{\frac{h}{2}}^2}{2I_y}$
+    \end{enumerate}
+    \item At a stationary point of a multi-variable function, which of the following is true?
+    \begin{enumerate}
+        \item Curl of the function becomes unity
+        \item Gradient of the function vanishes
+        \item Divergence of the function vanishes
+        \item Gradient of the function is maximum
+    \end{enumerate}
+    \item In a rocket engine, the hot gas generated in the combustion chamber exits the nozzle with a mass flow rate $719\,kg/sec$ and velocity $1794\,m/s$. The area of the nozzle exit section is $0.635\,m^2$. If the nozzle expansion is optimim, hten the thrust produced by the engine by
+        \begin{enumerate}
+            \item $811\, kN$
+            \item $1290\, kN$
+            \item $1354\, kN$
+            \item $2172\, kN$
+        \end{enumerate}
+    \item For the control volume shown in the figure below, the velocities are measured both at the upstream and the downstream ends.
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{/home/eshan/Pictures/Screenshots/scr1.png} 
+    \caption{}
+    \label{}
+\end{figure}
+The flow of density $\rho$ is incompressible, two dimensional and steady. The pressure is $p_\infty$ over the entire surface of the control volume. The drag on the airfoil is given by,
+        \begin{enumerate}
+            \item $\frac{\rho U_\infty^2h}{3}$
+            \item $0$
+            \item $\frac{\rho U_\infty^2h}{6}$
+            \item $2\rho U_\infty^2h$
+        \end{enumerate}
+    \item A gas turbine engine operates with a constant area duct combustor with inlet and outlet stagnation temperatures $540\, K$ and $1104\, K$ respectively. Assume that the flow is one dimensional, incompressible and frictionless and that the heat addition is driving the flow inside the combustor. The pressure loss, factor \brak{stagnation\,pressure\,loss\,non-dimentionalized\,by\,the\,inlet\,dynamic\,pressure} of the combustor is 
+            \begin{enumerate}
+                \item $0$
+                \item $0.489$
+                \item $1.044$
+                \item $2.044$
+            \end{enumerate}
+    \item The diffuser of an airplane engine decelerates the airflow from the flight Mach number $0.85$ to the compressor inlet Mach number $0.38$. Assume that the ratio of the specific heats is constant and is equal to $1.4$. If the diffuser pressure recovery ratio is $0.92$, then the isentropic efficiency of the diffuser is
+        \begin{enumerate}
+            \item $0.631$
+            \item $0.814$
+            \item $0.892$
+            \item $1.343$
+        \end{enumerate}
+    \item An airfoil section is known to generate lift when placed in a uniform stream of speed $U_\infty$ at an incidence $\alpha$. A biplane consisting of two such sections of identical chord $c$, separated by a distance $h$, is shown in the following figure
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{/home/eshan/Pictures/Screenshots/scr2.png} 
+    \caption{}
+    \label{}
+\end{figure}
+With regard to this biplane, which of the following statements is true?
+    \begin{enumerate}
+        \item Both the airfoils experience an upwash and an increased approach velocity
+        \item Both the airfoils experience an downwash and an decreased approach velocity
+        \item Both the airfoils experience an upwash and airfoil $A$ experience a decreased approach velocity while airfoil $B$ experiences  an increased approach velocity
+        \item The incidence for the individual sections of the biplane is not altered
+    \end{enumerate}
+    \item  Numerical value of the integral\\
+    $J=\int_{0}^{1}\frac{1}{1+x^2}\, dx,$ if evaluated numerically using the Trapezoidal rule with $dx=0.2$ would be 
+    \begin{enumerate}
+        \item $1$
+        \item $\frac{\pi}{4}$
+        \item $0.7837$
+        \item $0.2536$
+    \end{enumerate}
+    \item The purpose of  a fuel injection system in the combustor is
+    \begin{enumerate}
+        \item to accelerate the flow in the combustor
+        \item to increase the stagnation pressure of the fuel-air mixture 
+        \item to ignite the fuel-air mixture
+        \item to convert the bulk fuel into tiny droplets
+    \end{enumerate}
+    \item Which of the following values is nearer to the vacuum specific impulse of a rocket engine using liquid engine hydrogen and liquid oxygen as propellants?
+    \begin{enumerate}
+        \item $49\,sec$
+        \item $450\,sec$
+        \item $6000\,sec$
+        \item $40000\,sec$
+    \end{enumerate}
+    \item A circular cylinder is placed in an uniform steam of ideal fluid with its axis normal to the flow. Relative to the forward stagnation point, the angular positions along the circumference where the speed along the surface of the cylinder is equal to the free stream speed are 
+    \begin{enumerate}
+        \item $30,150,210\,and\,330\,degrees$
+        \item $45,135,225\,and\,315\,degrees$
+        \item $0,90,180\,and\,270\,degrees$
+        \item $60,120,240\,and\,300\,degrees$
+    \end{enumerate}
+    \item The Newton-Raphson iteration formula to find a cube root of a positive number $c$ is
+    \begin{enumerate}
+        \item $x_{k+1}=\frac{2x_k^3+\sqrt[3]{c}}{3x_k^2}$
+        \item $x_{k+1}=\frac{2x_k^3-\sqrt[3]{c}}{-3x_k^2}$
+        \item $x_{k+1}=\frac{2x_k^3+c}{3x_k^2}$
+        \item $x_{k+1}=\frac{x_k^3+c}{3x_k^2}$
+    \end{enumerate}
+    \item The torsion constant $J$ of a thin-walled closed tube of thickness $t$ and mean radius $r$ is given by
+    \begin{enumerate}
+        \item $J=2\pi rt^3$
+        \item $J=2\pi r^3t$
+        \item $J=2\pi r^2t^2$
+        \item $J=2\pi r^4$
+    \end{enumerate}
+    \item An aerospace system shown in the following figure is designed in such a way that the expansion generated at $A$ is completely absorbed by  wall $B$ for $p_1=p_d$, where $p_d$ corresponds to the design condition.
+
+    \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{/home/eshan/Pictures/Screenshots/scr3.png} 
+    \caption{}
+    \label{}
+\end{figure}
+
+    For $p_1\textgreater p_d$ which of the following statements is NOT true?
+    \begin{enumerate}
+        \item For $p_1\textless p_d$, the expansion fan from $A$ gets reflected from $B$ as a compression wave
+        \item For $p_1\textgreater p_d$, the expansion fan from $A$ gets reflectd from $B$ as an expansion wave
+        \item For $p_1\textless p_d$, the expansion fan from $A$ gets reflected from $B$ as an expansion wave
+        \item For $p_1\textgreater p_d$, $B$ always sees an expansion
+    \end{enumerate}
+    \item The span-wise lift distribution for three wings is shown in the following figure$\colon
+
+    \begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{/home/eshan/Pictures/Screenshots/scr4.png} 
+    \caption{}
+    \label{}
+\end{figure}
+In the above figure, $c_l$ refers to the section lift coefficient, $C_L$ refers to the lift coefficient of the wing, $y$ is the coordinate along the span and $s$ is the span of the wing. A designer prefers to use a wing for which the stall begins at the root. Which of the wings will he choose?
+    \begin{enumerate}
+        \item $P$
+        \item $Q$
+        \item $R$
+        \item None
+    \end{enumerate}
+\end{enumerate}
+\end{document}
