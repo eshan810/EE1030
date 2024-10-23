@@ -1,4 +1,4 @@
-import sys
+Eimport sys
 sys.path.insert(0, '/home/eshan/matgeo/codes/CoordGeo')
 import numpy as np
 import matplotlib.pyplot as plt
