@@ -1,0 +1,339 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\usetikzlibrary{patterns}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2010-EE- 53-65}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{52}
+    \item Which of the following circuits is a realization of the above function $F$
+\begin{enumerate}
+    \item 
+\item   \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (6.75,13.75) to[short] (7,13.75);
+\draw (6.75,13.25) to[short] (7,13.25);
+\draw (7,13.75) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (8.75,13.5);
+\draw (6.75,13.75) to[short] (6.75,13.25);
+\draw (6.75,13.5) to[short] (5.5,13.5);
+\draw (9.5,13.5) to[short] (9.75,13.5);
+\draw (9.5,13) to[short] (9.75,13);
+\draw (9.75,13.5) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (11.5,13.25);
+\draw (12.5,12.75) to[short] (12.75,12.75);
+\draw (12.5,12.25) to[short] (12.75,12.25);
+\draw (12.75,12.75) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (14.5,12.5);
+\draw (10.25,11.5) to[short] (10.5,11.5);
+\draw (10.25,11) to[short] (10.5,11);
+\draw (10.5,11.5) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (12.25,11.25);
+\draw (11.5,13.25) to[short] (12.25,13.25);
+\draw (12.25,13.25) to[short] (12.25,12.75);
+\draw (12.25,12.75) to[short] (12.75,12.75);
+\draw (12.25,11.25) to[short] (12.25,12.25);
+\draw (12.25,12.25) to[short] (12.75,12.25);
+\draw (8.75,13.5) to[short] (9.75,13.5);
+\draw (6.5,13.5) to[short] (6.5,13);
+\draw (9.5,13) to[short] (6.5,13);
+\node [font=\normalsize] at (5.25,13.5) {X};
+\node [font=\normalsize] at (10,11.5) {Y};
+\node [font=\normalsize] at (10,11) {Z};
+\node [font=\normalsize] at (14.75,12.5) {F};
+\end{circuitikz}
+
+\item             \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (12.5,14) to[short] (12.75,14);
+\draw (12.5,13.5) to[short] (12.75,13.5);
+\draw (12.75,14) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (14.5,13.75);
+\draw (12.75,12.5) to[short] (13,12.5);
+\draw (12.75,12) to[short] (13,12);
+\draw (13,12.5) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (14.75,12.25);
+\draw (16.5,13.25) to[short] (16.75,13.25);
+\draw (16.5,12.75) to[short] (16.75,12.75);
+\draw (16.75,13.25) node[ieeestd or port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (18.5,13);
+\draw (16.5,12.75) to[short] (15.25,12.75);
+\draw (15.25,12.75) to[short] (15.25,12.25);
+\draw (15.25,12.25) to[short] (14.75,12.25);
+\draw (16.75,13.25) to[short] (15.25,13.25);
+\draw (15.25,13.25) to[short] (15.25,13.75);
+\draw (15.25,13.75) to[short] (14.5,13.75);
+\draw (12.75,14) to[short] (11,14);
+\draw (12.5,13.5) to[short] (11.75,13.5);
+\draw (11.75,13.5) to[short] (11.75,14);
+\node [font=\normalsize] at (10.75,14) {X};
+\node [font=\normalsize] at (12.5,12.5) {Y};
+\node [font=\normalsize] at (12.5,12) {Z};
+\node [font=\normalsize] at (18.75,13) {F};
+\end{circuitikz}
+\item \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (10.75,14.5) to[short] (11,14.5);
+\draw (10.75,14) to[short] (11,14);
+\draw (11,14.5) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (12.75,14.25);
+\draw (13.75,14.25) to[short] (14,14.25);
+\draw (13.75,13.75) to[short] (14,13.75);
+\draw (14,14.25) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (15.75,14);
+\draw (14,12.75) to[short] (14.25,12.75);
+\draw (14,12.25) to[short] (14.25,12.25);
+\draw (14.25,12.75) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (16,12.5);
+\draw (17,13.5) to[short] (17.25,13.5);
+\draw (17,13) to[short] (17.25,13);
+\draw (17.25,13.5) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (19,13.25);
+\draw (13.75,14.25) to[short] (12.75,14.25);
+\draw (13.75,13.75) to[short] (10.25,13.75);
+\draw (10.75,14.5) to[short] (10.75,14);
+\draw (10.75,14.25) to[short] (9.25,14.25);
+\draw (10.25,13.75) to[short] (10.25,14.25);
+\draw (16,12.5) to[short] (16.5,12.5);
+\draw (17.25,13.5) to[short] (16.25,13.5);
+\draw (16.25,13.5) to[short] (16.25,14);
+\draw (16.25,14) to[short] (15.5,14);
+\draw (16.5,12.5) to[short] (16.5,13);
+\draw (16.5,13) to[short] (17,13);
+\node [font=\normalsize] at (9,14.25) {X};
+\node [font=\normalsize] at (13.75,12.75) {Y};
+\node [font=\normalsize] at (13.75,12.25) {Z};
+\node [font=\normalsize] at (19.25,13.25) {F};
+\end{circuitikz}
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (11.25,14) to[short] (11.5,14);
+\draw (11.25,13.5) to[short] (11.5,13.5);
+\draw (11.5,14) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (13.25,13.75);
+\draw (11.5,12) to[short] (11.75,12);
+\draw (11.5,11.5) to[short] (11.75,11.5);
+\draw (11.75,12) node[ieeestd nand port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (13.5,11.75);
+\draw (14.75,13.75) to[short] (15,13.75);
+\draw (14.75,13.25) to[short] (15,13.25);
+\draw (15,13.75) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (16.75,13.5);
+\draw (15.25,11.75) to[short] (15.5,11.75);
+\draw (15.25,11.25) to[short] (15.5,11.25);
+\draw (15.5,11.75) node[ieeestd and port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (17.25,11.5);
+\draw (18.5,13) to[short] (18.75,13);
+\draw (18.5,12.5) to[short] (18.75,12.5);
+\draw (18.75,13) node[ieeestd or port, anchor=in 1, scale=0.89](port){} (port.out) to[short] (20.5,12.75);
+\draw (15,13.75) to[short] (13.25,13.75);
+\draw (14.75,13.25) to[short] (14,13.25);
+\draw (13.5,11.75) to[short] (14,11.75);
+\draw (14,11.75) to[short] (14,13.25);
+\draw (15.5,11.75) to[short] (14.5,11.75);
+\draw (14.5,11.75) to[short] (14.5,10.75);
+\draw (14.5,10.75) to[short] (11.5,10.75);
+\draw (11.5,10.75) to[short] (11.5,12);
+\draw (11.25,14) to[short] (11.25,13.5);
+\draw (11.25,13.75) to[short] (10.75,13.75);
+\draw (11.5,11.75) to[short] (11,11.75);
+\draw (16.75,13.5) to[short] (17.5,13.5);
+\draw (17.5,13.5) to[short] (17.5,13);
+\draw (17.5,13) to[short] (18.5,13);
+\draw (17.25,11.5) to[short] (17.75,11.5);
+\draw (17.75,11.5) to[short] (17.75,12.5);
+\draw (17.75,12.5) to[short] (18.5,12.5);
+\node [font=\normalsize] at (10.5,13.75) {X};
+\node [font=\normalsize] at (10.75,11.75) {Y};
+\node [font=\normalsize] at (15,11.25) {Z};
+\node [font=\normalsize] at (20.75,12.75) {F};
+\end{circuitikz}
+    
+    \end{enumerate}
+        Statement for the linked Answer Questions $54$ and $55$\\
+        The $L-C$ circuit shown in the figure has an inductance $L=1\,mH$ and a capacitance $C=10\,uF$
+
+    \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (12.75,12.25) to[closing switch] (12.75,13.75);
+\draw (12.75,13.75) to[L ] (14.75,13.75);
+\draw [line width=0.6pt](15.5,13.75) to[C] (15.5,12);
+\draw (15.5,13.75) to[short] (14.75,13.75);
+\draw (12.75,12.25) to[short] (12.75,11.75);
+\draw (12.75,11.75) to[short] (15.5,11.75);
+\draw (15.5,11.75) to[short] (15.5,12.25);
+\node [font=\normalsize] at (14.9,12.9) {C};
+\node [font=\normalsize] at (16.5,12.9) {100 V};
+\node [font=\normalsize] at (16.25,12.5) {+};
+\node [font=\normalsize] at (16.25,13.25) {-};
+\draw [->, >=Stealth] (14.25,13.5) -- (15,13.5);
+\node [font=\normalsize] at (14.1,13.5) {i};
+\node [font=\normalsize] at (13.75,14.25) {L};
+\node [font=\normalsize] at (12,13) {t=0};
+\end{circuitikz}
+
+\item The initial current through the inductor is zero, while the initial capacitor voltage is $100\,V$. The switch is closed at $t=0$. The current $i$ through the circuit is $\colon$
+    \begin{enumerate}
+        \item $5\cos\brak{5\times10^4t}A$
+        \item $5\sin\brak{10^4t}A$
+        \item $10\cos\brak{5\times10^4t}A$
+        \item $10\sin\brak{10^4t}A$
+    \end{enumerate}
+    \item The $L-C$ circuit of $Q54$ is used to communicate a thyristor, which is initially carrying a current of $5\,A$ as shown in the figure below. The values and initial conditions of $L$ and $C$ are same as in $Q54$. The switch is closed at $t=0$. If the forward drop is negligible, the time taken for the device to turn off is 
+
+    \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (12.75,12.25) to[closing switch] (12.75,13.75);
+\draw (12.75,13.75) to[L ] (14.75,13.75);
+\draw [line width=0.6pt](15.5,13.75) to[C] (15.5,12);
+\draw (15.5,13.75) to[short] (14.75,13.75);
+\draw (12.75,12.25) to[short] (12.75,11.75);
+\draw (15.5,11.75) to[short] (15.5,12.25);
+\node [font=\normalsize] at (14.9,12.9) {C};
+\node [font=\normalsize] at (16.5,12.9) {100 V};
+\node [font=\normalsize] at (16.25,12.5) {+};
+\node [font=\normalsize] at (16.25,13.25) {-};
+\draw [->, >=Stealth] (14.25,13.5) -- (15,13.5);
+\node [font=\normalsize] at (14.1,13.5) {i};
+\node [font=\normalsize] at (13.75,14.25) {L};
+\node [font=\normalsize] at (12,13) {t=0};
+\draw (13.25,11.75) to[empty Zener diode] (15.25,11.75);
+\draw (12.75,11.75) to[short] (13.25,11.75);
+\draw (15.5,11.75) to[short] (15,11.75);
+\draw (13,11.75) to[short] (11.75,11.75);
+\draw (11.75,11.75) to[battery1] (11.75,10.5);
+\draw [ line width=0.5pt](16.75,11.75) to[R] (16.75,10.25);
+\draw (15.5,10.25) to[short] (11.75,10.25);
+\draw (16.75,11.75) to[short] (15.5,11.75);
+\draw (16.75,10.25) to[short] (15.25,10.25);
+\draw (11.75,10.25) to[short] (11.75,10.75);
+\draw [->, >=Stealth] (13.75,11.25) -- (14.75,11.25);
+\node [font=\normalsize] at (14.25,11) {5 A};
+\node [font=\normalsize] at (10.8,11.1) {100 V};
+\node [font=\normalsize] at (17.5,11) {20  $\Omega$};
+\end{circuitikz}
+    \begin{enumerate}
+        \item $52\,\mu s$
+        \item $156\,\mu s$
+        \item $312\,\mu s$
+        \item $26\,\mu s$
+    \end{enumerate}
+    \item $25$ persons in a room. $15$ of them play hockey, $17$ of them play football and $10$ of them play both hockey and football. Then the number of persons playing neither football nor hockey is $\colon$
+    \begin{enumerate}
+        \item $2$
+        \item $17$
+        \item $13$
+        \item $3$
+    \end{enumerate} 
+    \item $Choose\,the\,most\,appropriate\,word\,from\,the\,options\,given\,below\,to\,complete\,the\,\\following\,sentence\colon$ \\
+    If we manage to $\dots\dots$ our natural resources, we would leave a better planet for our children.
+    \begin{enumerate}
+        \item uphold
+        \item restrain
+        \item cherish
+        \item conserve
+    \end{enumerate}
+    \item $The\,below\,consists\,of\,a\,pair\,of\,related\,words\,followed\,by\,four\,pairs\,of\,words.\,Select\,the\\\,pair\,that\,best\,expresses\,the\,relation\,in\,the\,original\,pair.$\\
+    Unemployed $\colon$ Worker
+    \begin{enumerate}
+        \item fallow $\colon$ land
+        \item unaware $\colon$ sleeper
+        \item wit $\colon$ jester
+        \item renovated $\colon$ house
+    \end{enumerate}
+    \item $Which\,of\,the\,following\,options\,is\,the\,closest\,in\,meaning\,to\,the\,word\,below\,\colon$\\
+    Circuitous
+    \begin{enumerate}
+        \item cyclic
+        \item indirect
+        \item confusing
+        \item crooked
+    \end{enumerate}
+    \item $Choose\,the\,most\,appropriate\,word\,from\,the\,options\,given\,below\,to\,complete\,the\,following\\\,sentance$\\
+    His rather casual remarks on politics $\dots\dots$ his lack of seriousness about the subject.
+    \begin{enumerate}
+        \item masked
+        \item belied
+        \item betrayed
+        \item suppressed
+    \end{enumerate}
+    \item Hari $\brak{H}$, Gita $\brak{G}$, Irfan $\brak{I}$ and Saira $\brak{S}$ are siblings $\brak{i\cdot e\cdot\, brothers\, and\, sisters}$. All were born on $1^{st}$ January. The age difference between any two successive siblings $\brak{that\, is\, born\, one\, after\, another}$ is less than $3$ years. Given the following facts $\colon$
+    \begin{enumerate}
+     \item[i.] $Hari's\, age + Gita's\, age\, >\, Irfan's\, age\, + Saira's\, age$. 
+    \item[ii.] The age difference between Gita and Saira is $1$ year. However, Gita is not the oldest and Saira is not the youngest.
+    \item[iii.] There are no twins. 
+    \end{enumerate}
+    In what order were they born $\brak{oldest\, first}$?
+    \begin{enumerate}
+        \item $HSIG$
+        \item $SGHI$
+        \item $IGSH$
+        \item $IHSG$
+    \end{enumerate}
+    \item $5$ skilled workers can build a wall in $20$ days; $8$ semi-skilled workers can build a wall in $25$ days; $10$ unskilled workers can build a wall in $30$ days. If a team has $2$ skilled, $6$ semi-skilled and $5$ unskilled workers, how long will it take to build the wall?
+    \begin{enumerate}
+        \item $20$ days
+        \item $18$ days
+        \item $16$ days
+        \item $15$ days
+    \end{enumerate}
+    \item Modern warfare has changed from large scale clashes of armies to suppression of civilian populations. Chemical agents that do their work silently appear to be suited to such warfare; and regretfully, there exist people in military establishments who think that chemical agents are useful tools for their cause.\\ \\
+    $Which\,of\,the\,following\,statemens\,best\,sums\,up\,the meaning\,of\,above\,passage\colon$
+    \begin{enumerate}
+        \item Modern warfare has resulted in civil strife
+        \item Chemical agents are useful in modern warfare
+        \item Use of chemical agents in warfare would be undesirable.
+        \item People in military establishments like to use chemical agents in war.
+    \end{enumerate}
+    \item Given digits $2,2,3,3,3,4,4,4,4$ how many distinct $4$ digit numbers greater than $3000$ can be formed?
+    \begin{enumerate}
+        \item $50$
+        \item $51$
+        \item $52$
+        \item $53$
+    \end{enumerate}
+    \item If $137+276=435$ how many is $731+672$?
+    \begin{enumerate}
+        \item $534$
+        \item $1403$
+        \item $1623$
+        \item $1513$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
