@@ -1,0 +1,150 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2012-AE- 1-13}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+    \item The constraint $A^2=A$ on any square matrix $A$ is satisfied for
+    \begin{enumerate}
+        \item The identity matrix only.
+        \item the null matrix only.
+        \item both the identity matrix and null matrix.
+        \item no square matrix $A$
+    \end{enumerate}
+    \item The general solution of the differential equation $\frac{d^2y}{dt^2}+\frac{dy}{dt}-2y=0$ is  
+    \begin{enumerate}
+        \item $Ae^{-t}+Be^{2t}$
+        \item $Ae^{-2t}+Be^{-t}$
+        \item $Ae^{-2t}+Be^{t}$
+        \item $Ae^{t}+Be^{2t}$
+    \end{enumerate}
+    \item An aircraft in trimmed condition has zero pitching moment at 
+    \begin{enumerate}
+        \item its aerodynamic centre.
+        \item its centre of gravity.
+        \item $25\%$ of its mean aerodynamic chord.
+        \item $50\%$ od its wing root chord.
+    \end{enumerate}
+    \item In an aircraft , constant roll rate can be produced using ailerons by applying
+    \begin{enumerate}
+        \item a step input
+        \item a ramp input
+        \item a sinusoidal input
+        \item an impulse input
+    \end{enumerate}
+    \item For a symmetric airfoil,the lift coefficient for zero degree angle of attack is
+    \begin{enumerate}
+        \item $-1.0$
+        \item $0.0$
+        \item $0.5$
+        \item $1.0$
+    \end{enumerate}
+    \item The critical Mach number of an airfoil is attained when
+    \begin{enumerate}
+        \item the freestream Mach number is sonic.
+        \item the freestream Mach number is supersonic.
+        \item the Mach number somewhere on the airfoil is unity.
+        \item the Mach number everywhere on the airfoil is supersonic.
+    \end{enumerate}
+    \item The shadowgraph flow visualization technique depends on
+        \begin{enumerate}
+            \item the variation of the value of density in the flow
+            \item the first derivative of density with respect to spacial coordinate
+            \item the second derivative of density with respect to spacial coordinate
+            \item the third derivative of density with respect to spacial coordinate
+        \end{enumerate}
+    \item The Hohmann ellipse used as earth-Mars transfer orbit has
+    \begin{enumerate}
+        \item apogee at earth and perigee at Mars
+        \item both apogee and perigee at earth
+        \item apogee at Mars and perigee at earth
+        \item both apogee and perigee at Mars
+    \end{enumerate}
+    \item The governing equation for the static transverse deflection of beam under an uniformly distributed load, according to Euler-Bernoulli \brak{engineering} beam theory, is a 
+    \begin{enumerate}
+        \item $2^{nd}$ order linear homogeneous partial differential equation
+        \item $4^{th}$ order linear non-homogeneous ordinary differential equation
+        \item $2^{nd}$ order linear non-homogeneous ordinary differential equation
+        \item $4^{th}$ order nonlinear homogeneous ordinary differential equation
+    \end{enumerate}
+    \item The Poisson's ratio, $\nu$ of most aircraft grade metallic alloys has values in the range $\colon$
+    \begin{enumerate}
+        \item $-1\leq\nu\leq0$
+        \item $0\leq\nu0.2$
+        \item $0.2\leq\nu0.4$
+        \item $0.4\leq\nu0.5$
+    \end{enumerate}
+    \item The value of $k$ for which the system of equations $x+2y+kz=1;\,2x++ky+8z=3$ hsa no solution is
+        \begin{enumerate}
+            \item $0$
+            \item $2$
+            \item $4$
+            \item $8$
+        \end{enumerate}
+    \item If $u\brak{t}$ is a unit step function, the solution of the differential equation $m\frac{d^2y}{dt^2}+kx=u\brak{t}$ in Laplace domain is
+            \begin{enumerate}
+                \item $\frac{1}{s\brak{ms^2+k}}$
+                \item $\frac{1}{ms^2+k}$
+                \item $\frac{s}{ms^2+k}$
+                \item $\frac{1}{s^2\brak{ms^2+k}}$
+            \end{enumerate}
+    \item The general solution of the differential equation $\frac{dy}{dx}-2\sqrt{y}=0$ is
+    \begin{enumerate}
+        \item $y-\sqrt{x}+C=0$
+        \item $y-x+C=0$
+        \item $\sqrt{y}-\sqrt{x}+C=0$
+        \item $\sqrt{y}-x+C=0$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
