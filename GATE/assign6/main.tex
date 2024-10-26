@@ -1,0 +1,279 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2010-XE- 53-65}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{52}
+   \item[] Statement for Linked Answer Questions $53\,\&\,54$\\
+    Consider the following quadrature formula\\
+    $$\int_{0}^{1}12f\brak{x}\,dx=\sbrak{f\brak{0}+2bf\brak{0.25}+2f\brak{0.5}+2df\brak{0.75}+f\brak{1}}$$
+    \item If the above formula is used as Simpson's $\frac{1}{3}$ rule,then
+    \begin{enumerate}
+        \item $b=d=1$
+        \item $b=d=2$
+        \item $b=2d=1$
+        \item $b=2d=2$
+    \end{enumerate}
+    \item Using the correct values of $b$ and $d$ from $Q.53$ in the quadrature formula the value of $\int_{0}^{1}\frac{12}{1+x^2}\,dx$ evaluated correct up to $4$ decimal places is  
+    \begin{enumerate}
+        \item $8.3091$
+        \item $8.3121$
+        \item $8.3151$
+        \item $8.3191$
+    \end{enumerate}
+    \item[] Statement for Linked Answer Questions  $27\,\&\,28\colon$\\
+    Consider the initial value problem $\frac{dy}{dx}=f\brak{x,y}=2xy$ with $y\brak{0}=1,y\brak{0.2}=1.0408,y\brak{0.4}=1.1735$ and $y\brak{0.6}=1.4333$
+    \item Choose the correct predictor scheme to solve the above initial value problem at $x=0.8$ from the following
+    \begin{enumerate}
+        \item $y_{n+1}=y_n+\frac{4h}{3}\brak{2f_{n-1}-f_{n-2}+2f_{n-3}}$
+        \item $y_{n+1}=y_{n-3}+\frac{4h}{3}\brak{2f_{n-2}-f_{n-1}+2f_{n}}$
+        \item $y_{n+1}=y_{n-1}+\frac{h}{3}\brak{4f_{n-1}-5f_{n}+4f_{n+1}}$
+        \item $y_{n+1}=y_{n-3}+\frac{4h}{3}\brak{2f_{n-1}-f_{n-2}+2f_{n-3}}$
+    \end{enumerate}
+    \item Using the correct predictor scheme from $Q.55$, the value of $y\brak{0.8}$ is 
+    \begin{enumerate}
+        \item $1.8680$
+        \item $1.8750$
+        \item $1.8890$
+        \item $1.9055$
+    \end{enumerate}
+    \item Assuming all components are ideal, the average power delivered by the dc voltage source in the network shown in the figure is
+    
+   \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (14,11.5) to[american current source] (14,13.5);
+\draw (14.75,11.5) to[battery1] (16.75,11.5);
+\draw (15,13.5) to[R] (17,13.5);
+\draw (17,10.25) to[D] (14.5,10.25);
+\draw (14,11.5) to[short] (14.75,11.5);
+\draw (14,11.5) to[short] (14,10.25);
+\draw (14,10.25) to[short] (14.5,10.25);
+\draw (17,13.5) to[short] (17.5,13.5);
+\draw (17.5,13.5) to[short] (17.5,10.25);
+\draw (17.5,10.25) to[short] (16.5,10.25);
+\draw (16.75,11.5) to[short] (17.5,11.5);
+\draw (14,13.5) to[short] (15.25,13.5);
+\node [font=\normalsize] at (16,14) {1 $\Omega$};
+\node [font=\normalsize] at (16.2,11.9) {8 V};
+\node [font=\normalsize] at (16,12.5) {$i=10\cos\brak{100\pi t}A$};
+\end{circuitikz}
+    \begin{enumerate}
+        \item $-28\,W$
+        \item $0\,W$
+        \item $64\,W$
+        \item $80\,W$
+    \end{enumerate}
+    \item An ideal transformer with $10$ turns in primary and $30$ turns in secondary has its primary connected to external circuits as shown in the figure.
+
+ \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (13.25,12.75) to[L ] (13.25,14.25);
+\draw (13.25,14) to[short] (13.25,12.5);
+\draw (15.75,14.25) to[L ] (15.75,12.75);
+\draw (13.25,14.5) to[short] (15.75,14.5);
+\draw (15.75,14.5) to[short] (15.75,14);
+\draw (15.75,14) to[short] (15.75,12.5);
+\draw (15.75,12.5) to[short] (13.25,12.5);
+\draw (13.25,14.5) to[short] (13.25,14);
+\draw (13,14.5) to[short] (13,12.25);
+\draw (13,14.75) to[short] (16,14.75);
+\draw (16,14.75) to[short] (16,12.25);
+\draw (13,12.25) to[short] (16,12.25);
+\draw (13,14.75) to[short] (13,14);
+\draw (13,14) to[short] (12.25,14);
+\draw (12.25,14) to[short] (12.25,14.5);
+\draw (10.5,12.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (10.5,14);
+\draw (10.5,14.5) to[short] (10.5,13.75);
+\draw (10.5,12.5) to[short] (12.25,12.5);
+\draw (12.25,12.5) to[short] (12.25,13);
+\draw (12.25,13) to[short] (13,13);
+\draw (10.5,12.5) to[short] (10.5,13);
+\draw (11.5,12.5) to (11.5,12.25) node[ground]{};
+\draw (16,14) to[short] (16.5,14);
+\draw (16.5,14) to[short] (17,14);
+\draw (17,14) to[short] (17,14.5);
+\draw (17,14.5) to[short] (18.25,14.5);
+\draw (18.25,14.5) to[R] (18.25,13);
+\draw (18.25,13) to (18.25,12.75) node[ground]{};
+\draw (12,15.25) to[short] (17.5,15.25);
+\draw (17.5,15.25) to[short] (17.5,14.75);
+\draw (17.5,14.25) to[short] (17.5,13);
+\draw (17.5,13) to[short] (16,13);
+\node [font=\normalsize] at (19,13.75) {$120$ $\Omega$};
+\node [font=\normalsize] at (15.25,13.5) {$N_s$};
+\node [font=\normalsize] at (12.75,13.5) {$N_p$};
+\node [font=\normalsize] at (10.75,14.75) {$i_s$};
+\draw [->, >=Stealth] (11,14.75) -- (11.5,14.75);
+\node at (12,14.5) [circ] {};
+\draw (12,14.5) to[short] (12,14.5);
+\draw (12,14.5) to[short] (12.27,14.5);
+\draw (12,14.5) to[short] (12,15.25);
+\draw (12,14.5) to[short] (10.5,14.5);
+\node [font=\normalsize] at (11.5,13.35) {$80\angle 0\degree$};
+\draw[thick] (17.5,14.75) arc[start angle=90, end angle=270, radius=0.25cm];
+\end{circuitikz} \\
+The current provided from the sinusoidal voltage source is
+    \begin{enumerate}
+        \item $0.67\angle0\degree$
+        \item $2.0\angle0\degree$
+        \item $2.67\angle0\degree$
+        \item $10.67\angle0\degree$
+    \end{enumerate}
+    \item In a three-phase, Y-connected squirrel cage induction motor, if $N_s$ is the synchronous speed, $N_r$ is the rotor speed and $s$ is the slip, then the speeds of the airgap field and the rotor field with respect to the stator structure will respectively be
+        \begin{enumerate}
+            \item $N_s\,,sN_r$
+            \item $N_S\,, N_s$
+            \item $N_r\,, N_r$
+            \item $N_s\,, sN_s$
+        \end{enumerate}
+    \item The equivalent conductance of the forward biased diode, with bias voltage $V$, at the room temperature is
+    \begin{enumerate}
+        \item constant
+        \item proportional to $V$
+        \item proportional to $V^2$
+        \item proportional to $exp\brak{KV}$
+    \end{enumerate}
+    \item A number is represented as $\brak{1010\,1010}_2$ using $8-bits$ in signed magnitude representation. The decimal number represented is
+    \begin{enumerate}
+        \item $-42$
+        \item $-85$
+        \item $-86$
+        \item $-176$
+    \end{enumerate}
+    \item A $10-bit$ DAC has a full scale output of $5\,V$. The DAC's resolution and step size will respectively be
+    \begin{enumerate}
+        \item $0.0978\%,\,500\,mV$
+        \item $0.0978\%,\,488\,mV$
+        \item $0.195\%,\,9.76\,mV$
+        \item $0.195\%\,500\,mV$
+    \end{enumerate}
+    \item A power source has an open circuit voltage of $24\,V$ and short circuit current of $16\,A$. At intermediate operating conditions its terminal characteristics is as shown in the figure. The condition under which maximum power can be extracted from the power source is when the 
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (15.5,13.75) to[american current source] (15.5,12.25);
+\draw (15.5,13.75) to[short] (14.25,13.75);
+\draw (14.25,13.75) to[short] (14.25,12.25);
+\draw (14.25,12.25) to[short] (15.5,12.25);
+\draw (14.25,13.75) to[short] (14.25,14.25);
+\draw (14.25,14.25) to[short] (11.75,14.25);
+\draw (11.75,14.25) to[short] (11.75,11.75);
+\draw (11.75,11.75) to[short] (14.25,11.75);
+\draw (14.25,11.75) to[short] (14.25,12.5);
+\node [font=\normalsize] at (13.75,13) {$V_s$};
+\node [font=\normalsize] at (14,13.75) {+};
+\node [font=\normalsize] at (14,12.25) {-};
+\node [font=\normalsize] at (12.5,13.25) {Power};
+\node [font=\normalsize] at (12.5,13) {Source};
+\node [font=\normalsize] at (14.75,13) {$I_L$};
+\draw [->, >=Stealth] (17.75,12.5) -- (21.75,12.5);
+\draw [->, >=Stealth] (18,12.25) -- (18,15.25);
+\draw [short] (18,14.75) -- (20.75,12.5);
+\node [font=\normalsize] at (17.8,12.3) {$0$};
+\node [font=\normalsize] at (21.75,12.25) {$I_L$};
+\node [font=\normalsize] at (17.75,15.25) {$V_s$};
+\node [font=\normalsize] at (17.5,14.75) {$24 V$};
+\node [font=\normalsize] at (20.9,12.25) {$16 A$};
+\end{circuitikz}
+
+        \begin{enumerate}
+            \item load current is $16\,A$
+            \item source voltage is $24\,V$
+            \item load power is $96\,W$
+            \item load power is $384\,W$
+        \end{enumerate}
+    \item A $100\,kVA,\,\frac{11\,kV}{415\,V}$ transformer has $2\%$ winding resistance and $4\%$ leakage reactance. The voltage regulation at rated $kVA,\,0.8\,pf$ lagging load is 
+            \begin{enumerate}
+                \item $2\%$
+                \item $4\%$
+                \item $4.8\%$
+                \item $6\%$
+            \end{enumerate}
+    \item The source voltage of the three-phase network shown in figure is $11\,kV$
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (10.25,8.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (13.25,8.75);
+\draw (10.25,8.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (11.75,11.25);
+\draw (13.25,8.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (11.75,11.25);
+\draw (11.75,13.5) to[R, l={\normalsize $2\,\ohm$}] (18.5,13.5);
+\draw (11.75,13.5) to[short] (11.75,11.25);
+\draw (16.75,13.5) to[short] (18.5,13.5);
+\draw (18.5,13.5) to[R] (18.5,12.5);
+\draw (18.5,12.5) to[L ] (18.5,11.5);
+\draw (18.5,11.5) to[R] (17.5,10.5);
+\draw (17.5,10.5) to[L ] (16.5,9.5);
+\draw (18.5,11.5) to[R] (19.5,10.5);
+\draw (19.5,10.5) to[L ] (20.5,9.5);
+\draw (13.25,8.75) to[R,l={\normalsize $2\,\ohm$}] (16.5,8.75);
+\draw (16.5,9.5) to[short] (16.5,8.75);
+\draw (20.5,9.5) to[short] (20.75,9.5);
+\draw (10.25,8.75) to[short] (10.25,7.75);
+\draw (10.25,7.75) to[R,l={\normalsize $2\,\ohm$}] (20.75,7.75);
+\draw (20.75,9.5) to[short] (20.75,7.75);
+\node[font=\normalsize] at (13.5,10.5) {$11\,kV$};
+\node[below,font=\normalsize] at (11.75,7.75) {SOURCE};
+\node[below,font=\normalsize] at (18.5,7.75) {LOAD};
+\draw[->] (16.5,13.7) to (17.5,13.7);
+\node[font=\normalsize] at (18.6,13.7) {$100\,A,\,0.8\,pf$};
+\end{circuitikz}\\
+The line voltage at the load end and the phase angle with respect to the source voltage will be
+    \begin{enumerate}
+        \item $10.7\,kV,0\degree$
+        \item $10.7\,kV,\,1.08\degree \, lagging$
+        \item $10.7\,kV,\,1.08\degree \, leading$
+        \item $11\,kV,\,1.08\degree \,lagging$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
