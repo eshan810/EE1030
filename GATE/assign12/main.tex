@@ -1,0 +1,115 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2016-PH- 14-26}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{13}
+    \item There are four electrons in $3d$ shell of an isolated atom. The total magnetic moment of the atom in units in Bohr magneton is \dots
+    \item Which of the following transitions is NOT allowed in the case of an atom, according to the electric dipole radiation selection rule?
+    \begin{enumerate}
+        \item $2s-1s$
+        \item $2p-1s$
+        \item $2p-2s$
+        \item $3d-2p$
+    \end{enumerate}
+    \item In the $SU\brak{3}$ quark model, the triplet of mesons $\brak{\pi^+,\pi^0,\pi^-}$ has
+    \begin{enumerate}
+        \item Isospin=$0$, Strangeness =$0$
+        \item Isospin=$1$, Strangeness =$0$
+        \item Isospin=$\frac{1}{2}$, Strangeness =$+1$
+        \item Isospin=$\frac{1}{2}$, Strangeness =$-1$
+    \end{enumerate}
+    \item The magnitude of the magnetic dipole moment associated with a square shaped loop carrying a steady current $I$ is $m$. If this loop is changed to a circular shape with the same current $I$ passing through it, the magnetic dipole moment becomes $\frac{pm}{\pi}$. The value of $p$ is \dots
+    \item The total power emitted by a spherical black body of Radius $R$ at a temperature $T$ is $P_1$. Let, $P_2$ be the total power emitted by another spherical black body  of radius $\frac{R}{2}$ kept at an temperature $2T$. The ratio, $\frac{P_1}{P_2}$ is \dots. \brak{Give\,your\,answer\,upto\,two\,decimal\,places}
+    \item The entropy $S$ of a system of $N$ spins, which may align either in the upward or in the downward direction, is given by $S=-k_BN\sbrak{p\ln{p}+\brak{1-p}\ln\brak{1-p}}$. Here, $k_B$ is the Boltzmann constant. The probability of alignment in the upward direction is $p$ .The value of $p$, at which the entropy is maximum, is \dots. \brak{Give\,your\,answer\,upto\,one\,decimal\,place}
+    \item For a system at constant temperature and volume, which of the following statements is correct at equilibrium?
+    \begin{enumerate}
+        \item The Helmholtz free energy attains a local minimum.
+        \item The Helmholtz free energy attains a local maximum.
+        \item The Gibbs free energy attains a local minimum.
+        \item The Gibbs free energy attains a local maximum.
+    \end{enumerate}
+    \item $N$ atoms of an ideal gas are enclosed in a container of volume $V$. The volume of the container is changed to $4V$, while keeping the total energy constant. The change in the entropy of the gas, in units of $Nk_n\ln 2,$ is \dots, where $k_B$ is the Boltzmann constant.
+    \item Which of the following is an analytic function of $z$ everywhere in the complex plane?
+    \begin{enumerate}
+        \item $z^2$
+        \item $\brak{z^{\cdot}}^2$
+        \item $\abs{z}^2$
+        \item $\sqrt{z}$
+    \end{enumerate}
+    \item In a Young's double slit experiment using light, the apparatus has two slits of unequal widths. When only $slit-1$ is open, the maximum observed intensity on the screen is $4I_0$. When only $slit-2$ is open, the maximum observed intensity is $I_0$. When both the slits are open, an interference pattern appears on the screen. The ratio of the intensity of principal maximum to that of the nearest minimum is \dots
+    \item Consider a metal which obeys the Sommerfeld model exactly. If $E_F$ is the Fermi energy of the metal at $T=0\,K$ and $R_H$ is the Hall coefficient , which of the following statements is correct ?
+    \begin{enumerate}
+        \item $R_H\propto E_F^{\frac{3}{2}}$
+        \item $R_H\propto E_F^{\frac{2}{3}}$
+        \item $R_H\propto E_F^{-\frac{3}{2}}$
+        \item $R_H$ is independent of $E_F$
+    \end{enumerate}
+    \item A one-dimensional linear chain of atoms contains two types of atoms of masses $m_1$ and $m_2\brak{where\,m_2\textgreater m_1}$, arranged alternately. The distance between successive atoms is the same. Assume that the harmonic approximation is valid. At the first Brillouin zone boundary , which of the following statements is correct?
+    \begin{enumerate}
+        \item The atoms of mass $m_2$ are at rest in optical mode, while they vibrate in acoustical mode.
+        \item The atoms of mass $m_1$ are at rest in optical mode, while they vibrate in acoustical mode.
+        \item Both types of atoms vibrate with equal amplitudes in the optical as well as in the acoustical modes.
+        \item Both types of atoms vibrate, but with unequal, non-zero amplitudes in the optical as well as in the acoustical modes.
+    \end{enumerate}
+    \item Which of the following operators is Hermitian?
+    \begin{enumerate}
+        \item $\frac{d}{dx}$
+        \item $\frac{d^2}{dx^2}$
+        \item $i\frac{d^2}{dx^2}$
+        \item $\frac{d^3}{dx^3}$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
