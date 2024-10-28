@@ -1,0 +1,134 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2016-MA- 14-26}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{13}
+    \item Consider a real vector space $V$ of dimension $n$ and a non-zero linear transformation $T\colon V\to V$. If dimension $\brak{T\brak{V}}\textless n$ and $T^2=\lambda T$, for some $\lambda\in R\backslash \cbrak{0},$  then which of the following statements is TRUE?
+    \begin{enumerate}
+        \item determinant$\brak{T}=\abs{\lambda}^n$
+        \item There exists a non-trivial subspace $V_1$ of $V$ such that $T\brak{X}=0$ for all $X\in V_1$
+        \item $T$ is invertible
+        \item $\lambda$ is the only eigenvalue of $T$
+    \end{enumerate}
+    \item Let $S=\left[0,1\right)\cup\sbrak{2,3}$ and $f\colon S\to R$ be a strictly increasing function such that $f\brak{S}$ is connected. Which of the following statements is TRUE?
+    \begin{enumerate}
+        \item $f$ has exactly two discontinuity
+        \item $f$ has exactly two discontinuities
+        \item $f$ has infinitely many discontinuities
+        \item $f$ is continuous
+    \end{enumerate}
+    \item Let $a_1=1$ and $a_n=a_{n-1}+4,n\geq 2.$ Then,
+        $$\lim_{n\to\infty}\sbrak{\frac{1}{a_1a_2}+\frac{1}{a_2a_3}+\dots+\frac{1}{a_{n-1}a_n}}$$
+        is equal to \dots
+    \item Maximum $\cbrak{x+y\colon\brak{x,y}\in\overline{B\brak{0,1}}}$ is equal to \dots
+    \item Let $a,b,c,d\in R$ such that $c^2+d^2\neq 0.$ Then, the Cauchy problem
+            $$au_x+bu_y=e^{x+y},\quad x,y\in R$$
+            $$u\brak{x,y}=0\,\,on\,\,cx+dy=0$$
+            has a unique solution if
+            \begin{enumerate}
+                \item $ac+bd\neq0$
+                \item $ad-bc\neq0$
+                \item $ac-bd\neq0$
+                \item $ad+bc\neq0$
+            \end{enumerate}
+    \item Let $u\brak{x,y}$ be the d'Alembert's solution of the initial value problem for the wave equation 
+            $$u_{tt}-c^2u_{xx}=0$$
+            $$u\brak{x,0}=f\brak{x},\,u_t\brak{x,0}=g\brak{x},$$
+            where $c$ is a positive real number and $f,g$ are smooth odd functions. Then, $u\brak{0,1}$ is equal to \dots
+    \item Let the probability density function of a random variable $X$ be 
+        $$f\brak{x}
+        \begin{cases}
+            x \quad\quad\quad\quad 0\leq x\textless \frac{1}{2}\\
+            c\brak{2x-1}^2 \text{    } \frac{1}{2}\textless x \leq 1\\
+            0 \text{\quad\quad\quad\quad otherwise}
+        \end{cases}
+        $$
+        Then, the value of $c$ is equal to \dots 
+    \item Let $V$ be the set of all solutions of the equation $y\prime\prime+ay\prime+by=0$ satisfying $y\brak{0} =y\brak{1}$, where $a,b$ are positive real numbers. Then, dimension$\brak{V}$ is equal to\dots
+    \item Let $y\prime\prime+p\brak{x}y\prime+q\brak{x}y=0,x\in\brak{-\infty,\infty},$ where $o\brak{x}$ and $q\brak{x}$ are continuous functions. If $y_1\brak{x}=\sin\brak{x}-2\cos\brak{x}$ and $y_2\brak{x}=2\sin\brak{x}+\cos\brak{x}$ are two linearly independent solutions of the above, equation, then $\abs{4p\brak{0}+2q\brak{1}}$ is equal to \dots
+    \item Let $P_n\brak{x}$ be the Legendre polynomial of degree $n$ and $I=\int_{-1}^{1}x^kP_n\brak{x}\,dx,$ where $k$ is a non-negative integer. Consider the following statements $P$ and $Q\colon$\\
+    $\brak{P}\colon I=0$ if $k\textless n.$\\
+    $\brak{Q}\colon I=0$ if $n-k$ is an odd integer.\\ \\
+    Which of the above statements hold TRUE?
+    \begin{enumerate}
+        \item both $P$ and $Q$
+        \item only $P$
+        \item only $Q$
+        \item Neither $P$ nor $Q$
+    \end{enumerate}
+    \item Consider the following statements $P$ and $Q\colon$\\
+    $\brak{P}\colon x^2y\prime\prime+xy\prime+\brak{x^2-\frac{1}{4}}y=0$ has two linearly independent Frobenius series solution near $x=0$.\\
+    $\brak{Q}\colon x@y\prime\prime+3\sin\brak{x}y\prime+y=0$ has two linearly independent Frobenius series solution near $x=0$.\\ \\
+    Which of the above statements hold TRUE?
+    \begin{enumerate}
+        \item both $P$ and $Q$
+        \item only $P$
+        \item only $Q$
+        \item Neither $P$ nor $Q$
+    \end{enumerate}
+    \item Let the polynomial $x^4$ be approximated by a polynomial of degree $\leq 2$, which interpolates $x^4$ at $x=-1,0$ and $1$ .Then, the maximum absolute interpolation error over the interval $\sbrak{-1,1}$ is equal to \dots
+    \item Let $\brak{z_n}$ be a sequence of distinct points in $D\brak{0,1}=\cbrak{z\in C\colon \abs{z}\textless1}$ with $\lim_{n\to \infty}z_n=0.$ Consider the following statements $P$ and $Q\colon$\\
+    $\brak{P}\colon$ There exists a unique analytical function $f$ on $D\brak{0,1}$ such that $f\brak{z_n}=\sin\brak{z_n}$ for all $n$.\\
+    $\brak{Q}\colon$ There exists an analytical function $f$ on $D\brak{0,1}$ such that $f\brak{z_n}=0$ if  $n$ is even and $f\brak{z_n}=1$ if $n$ is odd.\\ \\
+    Which of the above statements hold TRUE?
+    \begin{enumerate}
+        \item both $P$ and $Q$
+        \item only $P$
+        \item only $Q$
+        \item Neither $P$ nor $Q$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
