@@ -1,0 +1,117 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2015-MA- 53-65}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{52}
+    \item Let $H=\cbrak{\brak{x_n}\in l_2\colon\sum_{n=1}^{\infty}\frac{x_n}{n}=1}.$ Then $H$   
+    \begin{enumerate}
+        \item is bounded
+        \item is closed
+        \item is a subspace
+        \item has an interior point 
+    \end{enumerate}
+    \item Let $V$ be a closed subspace of $L^2\sbrak{0,1}$ be given by $f\brak{x} =x$ and $g\brak{x}=x^2$. If $V^\perp = Span\cbrak{f} $ and $Pg$ is the orthogonal projection of $g$ on $V$, then $\brak{g-Pg}\brak{x},x\in\sbrak{0,1}$, is
+    \begin{enumerate}
+        \item $\frac{3}{4}x$
+        \item $\frac{1}{4}x$
+        \item $\frac{3}{4}x^2$
+        \item $\frac{1}{4}x^2$
+    \end{enumerate}
+    \item Let $p\brak{x}$ be the polynomial of degree at most $3$ that passes through the points $\brak{-2,12},\brak{-1,1},\brak{0,2}$ and $\brak{2,-8}$. Then the coefficient of $x^3$ in $p\brak{x}$ is equal to \dots
+    \item If, for some $\alpha,\beta\in R,$ the integration formula 
+        $$\int_{0}^{2} p\brak{x}\,dx=p\brak{\alpha}+p\brak{\beta}$$
+        holds for all polynomials $p\brak{x}$ of degree at most $3$, then the value of $3\brak{\alpha-\beta}^2$ is equal to \dots
+      \item Let $y\brak{t}$ be a continuous function on $\left [0,\infty\right)$ whose Laplace transform exists. If $y\brak{t}$ satisfies 
+        $$\int_{0}^{t}\brak{1-\cos\brak{t-\tau}}y\brak{\tau}\,d\tau =t^4,$$
+        then $y\brak{1}$ is equal to \dots
+    \item Consider the initial value problem 
+        $$x^2y\prime\prime-6y=0,\quad y\brak{1}=\alpha,y\prime\brak{1}=6.$$
+        if $y\brak{x}\to 0$ as $x\to 0^{+}$, then $\alpha$ is equal to \dots
+    \item Define $f_1,f_2\colon\sbrak{0,1}\to R$ by
+        $$f_1\brak{x}=\sum_{n=1}^{\infty}\frac{x\sin\brak{n^2x}}{n^2}\,and\,\,f_2\brak{x}\sum_{n=1}^{\infty}x^2\brak{1-x^2}^{n-1}$$
+        Then
+        \begin{enumerate}
+            \item $f_1$ is continuous but $f_2$ is NOT continuous 
+            \item $f_2$ is continuous but $f_1$ is NOT continuous 
+            \item both $f_1$ and $f_2$ are continuous
+            \item neither $f_1$ nor $f_2$ is continuous
+        \end{enumerate}
+    \item Consider the unit sphere $S=\cbrak{\brak{x,y,z}\in R^3\colon x^2+y^2+z^2=1}$ and the unit norm vector $\hat{n}=\brak{x,y,z}$ at each point $\brak{x,y,z}$ on $S$.The value of the surface integral 
+        $$\int\int_{S}\cbrak{\brak{\frac{2x}{\pi}+\sin\brak{y^2}}x+\brak{e^z-\frac{y}{\pi}}y+\brak{\frac{2z}{\pi}+\sin^2y}z}\,d\sigma$$
+        is equal to
+    \item Let $D=\cbrak{\brak{x,y}\in R^2\colon 1\leq x\leq1000,1\leq y\leq1000}$. Define
+        $$f\brak{x,y}=\frac{xy}{2}+\frac{500}{x}+\frac{500}{y}$$
+        Then the minimum value of $f$ on $D$ is equal to \dots
+    \item Let $D=\cbrak{z\in C\colon \abs{z}\textless 1}$. Then there exists a non-constant analytic function $f$ on $D$ such that for all $n=2,3,4,\dots$ 
+    \begin{enumerate}
+        \item $f\brak{\frac{\sqrt{-1}}{n}}=0$
+        \item $f\brak{\frac{1}{n}}=0$
+        \item $f\brak{1-\frac{1}{n}}=0$
+        \item $f\brak{\frac{1}{2}-\frac{1}{n}}=0$
+    \end{enumerate}
+    \item Let $\sum_{n=-\infty}^{\infty}a_nz^n$ be the Laurent series expansion of $f\brak{z}=\frac{1}{2z^2-13z+15}$ in the annulus $\frac{3}{2}\textless\abs{z}\textless 5.$ Then $\frac{a_1}{a_2}$ is equal to \dots 
+    \item The value of $\frac{i}{4-\pi}\int_{\abs{z}=4} \frac{dz}{z\cos\brak{x}}$ is equal to \dots
+    \item Suppose that among all continuously differentiable functions $y\brak{x},x\in R,$ with $y\brak{0}=0$ and $y\brak{1}=\frac{1}{2},$ the function $y_0\brak{x}$ minimizes the functional 
+        $$\int_{0}^{1}\brak{e^{-\brak{y\prime-x}}+\brak{1+y}y\prime}\,dx.$$
+        Then $y_0\brak{\frac{1}{2}}$ is equal to 
+            \begin{enumerate}
+                \item $0$
+                \item $\frac{1}{8}$
+                \item $\frac{1}{4}$
+                \item $\frac{1}{2}$
+            \end{enumerate}
+\end{enumerate}
+\end{document}
