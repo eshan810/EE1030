@@ -1,0 +1,137 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2017-MA- 14-26}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{13}
+    \item For $n\in Z$, define $c_n=\frac{1}{\sqrt{2\pi}}\int_{-\pi}^{\pi}e^{i\brak{n-i}x}\,dx,$ where $i^2=-1$. Then $\sum_{n\in Z}\abs{c_n}^2$ equals 
+    \begin{enumerate}
+        \item  $\cosh\brak{\pi}$
+        \item $\sinh\brak{\pi}$
+        \item $\cosh\brak{2\pi}$
+        \item $\sinh\brak{2\pi}$
+    \end{enumerate}
+    \item If the fourth order divided difference of $f\brak{x}=\alpha x^4+5x^3+3x+2,\alpha\in R,$ at the points $0.1,0.2,0.3,0.4,0.5$ is $5,$ then $\alpha$ equals \dots
+    \item If the quadrature rule $\int_{0}^{2}f\brak{x}\,dx\approx c_1 f\brak{0}+3f\brak{c_2},$ where $c_1,c_2\in R,$ is exact for all polynomials of degree $\leq 1,$ then $c_1+3c_2$ equals \dots
+    \item If $u\brak{x,y}=1+x+y+f\brak{xy},$ where $f\colon R^2\to R$ is a differential function, then $u$ satisfies
+    \begin{enumerate}
+        \item $x\frac{\partial u}{\partial x}-y\frac{\partial u}{\partial y}=x^2-y^2$
+        \item $x\frac{\partial u}{\partial x}-y\frac{\partial u}{\partial y}=0$
+        \item $x\frac{\partial u}{\partial x}-y\frac{\partial u}{\partial y}=x-y$
+        \item $y\frac{\partial u}{\partial x}-x\frac{\partial u}{\partial y}=x-y$
+    \end{enumerate}
+    \item The partial differential equation $x\frac{\partial^2 u}{\partial x^2}+\brak{x-y}\frac{\partial^2 u}{\partial x\partial y}-y\frac{\partial^2 u}{\partial y^2}+\frac{1}{4}\brak{\frac{\partial u}{\partial y}-\frac{\partial u}{\partial x}}=0$ is
+    \begin{enumerate}
+        \item hyperbolic along the line $x+y=0$
+        \item elliptic along the line $x-y=0$
+        \item elliptic along the line $x+y=0$
+        \item parabolic along the line $x+y=0$
+    \end{enumerate}
+    \item Let $X$ and $Y$ be topological spaces and let $f\colon X\to Y$ be a continuous surjective function. Which one of the following statements is TRUE?\
+    \begin{enumerate}
+        \item If $X$ is separable, then $Y$ is separable 
+        \item If $X$ is first countable, then $Y$ is first countable 
+        \item If $X$ is Hausdorff, then $Y$ is Hausdorff
+        \item If $X$ is regular, then $Y$ is regular
+    \end{enumerate}
+    \item Consider the topology $\mathcal{T}=\cbrak{U\subseteq Z\colon Z\backslash U\,is\,finite\,\,or\,0\neq U}$ on $Z$. Then, the topological space $\brak{Z,\mathcal{T}}$ is
+    \begin{enumerate}
+        \item compact but NOT connected
+        \item connected but NOT compact
+        \item both compact and connected
+        \item neither compact nor connected
+    \end{enumerate}
+    \item Let $F\brak{x}$ be the distribution function of a random variable $X$. Consider the functions $\colon$\\
+    $G_1\brak{x}=\brak{F\brak{x}}^3,x\in R$\\
+    $G_2\brak{x}=1-\brak{1-F\brak{x}}^5,x\in R$\\ \\
+    Which of the above functions are distribution functions?
+    \begin{enumerate}
+        \item Neither $G_1$ nor $G_2$
+        \item Only $G_1$ 
+        \item Only $G_2$
+        \item Both $G_1$ and $G_2$
+    \end{enumerate}
+    \item Let $X_1,X_2,\dots,X_n\,\brak{n\geq 2}$ be independent and identically distributed random variables with finite variance $\sigma^2$ and let $\Bar{X}=\frac{1}{n}\sum_{i=1}^{n}X_i$. Then the covariance between $\Bar{X}$ and $X_1-\Bar{X}$ IS
+    \begin{enumerate}
+        \item $0$
+        \item $-\sigma^2$
+        \item $\frac{-\sigma^2}{n}$
+        \item $\frac{\sigma^2}{n}$
+    \end{enumerate}
+    \item Let $X_1,X_2,\dots,X_n\,\brak{n\geq2}$ be a random sample from a $N\brak{\mu,\sigma^2}$ population, where $\sigma^2=144.$ The smallest $n$ such that the length of the shortest $95\%$ confidence interval for $\mu$ will not exceed $10$ is \dots
+    \item Consider the linear programming problem \brak{LPP}$\colon$
+    $  \begin{array}{lc}
+\text{Maximize} & 4x_1+6x_2 \\
+\text{subject to} & x_1+x_2\leq 8, \\
+& 2x_1+3x_2\geq 18, \\
+& x_1\geq6,x_2 \,is\,unrestricted\,in\,sign.
+\end{array} $ \\
+Then the LPP has
+    \begin{enumerate}
+        \item no optimal solution 
+        \item only one basic feasible solution and that is optimal 
+        \item more than one basic feasible solution and a unique optimal solution
+        \item infinitely many optimal solutions
+    \end{enumerate}
+    \item For a linear programming problem \brak{LPP} and its dual, which one of the following is NOT TRUE?
+    \begin{enumerate}
+        \item The dual of the dual is primal
+        \item If the primal LPP has an unbounded objective function, then the dual LPP is infeasible
+        \item If the primal LPP is infeasible, then the dual LPP has an unbounded objective function
+        \item If the primal LPP has a finite optimal solution, then the dual LPP also has a finite optimal solution
+    \end{enumerate}
+    \item If $U$ and $V$ are the null spaces of $\myvec{1&1&0&0\\0&0&1&1}$ and $\myvec{1&2&3&2\\0&1&2&1}$, respectively, then the dimension of the subspace $U+V$ equals \dots
+\end{enumerate}
+\end{document}
