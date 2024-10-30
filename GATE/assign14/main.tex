@@ -1,0 +1,150 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2017-PH- 53-64}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{52}
+    \item Consider an ideal operational amplifier as shown in the figure below with $R_1=5\,k\ohm,R_2=1\,k\ohm,R_L=100\,k\ohm$. For an applied input voltage $V=10\,mV$, the current passing through $R_2$ is \dots $\mu A$. \brak{up\,to\,two\,decimal\,places}.
+
+    \begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (11.5,10.75) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+\draw (opamp2.+) to[short] (10,11.25);
+\draw  (opamp2.-) to[short] (10,10.25);
+\draw (12.7,10.75) to[short](13,10.75);
+\draw (7,11.25) to[battery1] (7,7.75);
+\draw (7,7.75) to (7,6.75) node[ground]{};
+\draw (7,11.25) to[short] (10,11.25);
+\draw (10,10.25) to[short] (10,9);
+\draw (13.75,9) to[short] (10,9);
+\draw (13,10.75) to[short] (16.25,10.75);
+\draw (16.25,10.75) to[R] (16.25,7.25);
+\draw (13.75,9) to[R] (13.75,10.75);
+\draw (13.75,9) to[R] (13.75,7.25);
+\draw (16.25,7.25) to (16.25,6.75) node[ground]{};
+\draw (13.75,7.25) to (13.75,6.75) node[ground]{};
+\node [font=\large] at (6.25,9.5) {$V$};
+\node [font=\large] at (13,10) {$R_1$};
+\node [font=\large] at (13,8.25) {$R_2$};
+\node [font=\large] at (16.75,9) {$R_L$};
+\end{circuitikz}
+    \item Consider the differential equation $\frac{dy}{dx}+y\tan\brak{x}=\cos\brak{x}$. If $y\brak{0}=0,y\brak{\frac{\pi}{3}}$ is \dots. \brak{up\,to\,two\,decimal\,places}.
+    \item Positronium is an atom made of an electron and a positron. Given the Bohr radius for the ground state of Hydrogen atom to be $0.53$ Angstroms, the Bohr radius for the ground state of positronium is \dots Angstroms. \brak{up\,to\,two\,decimal\,places}.
+    \item The ninth and the tenth of this month are Monday and Tuesday \dots .
+    \begin{enumerate}
+        \item figuratively
+        \item retrospectively
+        \item respectively
+        \item rightfully
+    \end{enumerate}
+    \item It is \dots to read this year's textbook \dots the last year's.
+    \begin{enumerate}
+        \item easier,than
+        \item most easy,than
+        \item easier,from
+        \item easiest,from
+    \end{enumerate}
+    \item A rule states that in order to drink beer, one must be over $18$ years old. In a bar, there are $4$ people. $P$ is $16$ years old, $Q$ is $25$ years old, $R$ is drinking milkshake and $S$ is drinking a beer. What must be checked to ensure that the rule is being followed?
+    \begin{enumerate}
+        \item Only $P's$ drink
+        \item Only $P's$ drink and $S$ age
+        \item Only $S's$ age
+        \item Only $P's$ drink, $Q's$ drink and $S$ age
+    \end{enumerate}
+    \item Fatima starts from point $P$, goes North for $3$ km, and then East for $4$ km to reach point $Q$. She then turns to face point $P$ and goes $15$ km in that direction. She then goes North for $6$ km. How far is she from point $P$, and in which direction should she go to reach point $P$?
+    \begin{enumerate}
+        \item $8$ km, East
+        \item $12$ km, North
+        \item $6$ km, East
+        \item $10$ km, North
+    \end{enumerate}
+    \item $500$ students are taking one or more courses out of Chemistry, Physics, and Mathematics. Registration records indicate course enrollment as follows $\colon$ Chemistry $\brak{329}$, Physics $\brak{186}$, Mathematics $\brak{295}$, Chemistry and Physics $\brak{83}$, Chemistry and Mathematics $\brak{217}$, and Physics and Mathematics $\brak{63}$. How many students are taking all $3$ subjects?
+    \begin{enumerate}
+        \item $37$
+        \item $43$
+        \item $47$
+        \item $53$
+    \end{enumerate}
+    \item "If you are looking for a history of India, or for an account of the rise and fall of the British Raj, or for the reason of the cleaving of the subcontinent into two mutually antagonistic parts and the effects this mutilation will have in the respective sections, and ultimately on Asia, you will not find it in these pages; for though I have spent a lifetime in the country, I lived too near the seat of events, and was too intimately associated with the actors, to get the perspective needed for the impartial recording of these matters."\\ \\
+    Which of the following statements best reflects the author's opinion ?
+    \begin{enumerate}
+        \item An intimate association does not allow for the necessary perspective.
+        \item Matters are recorded with an impartial perspective.
+        \item An intimate association offers an impartial perspective.
+        \item Actors are typically associated with the impartial recording of matters.
+    \end{enumerate}
+    \item Each of $P,Q,R,S,W,X,Y\,\,and\,\,Z$ has been married at most once. $X$ and $Y$ are married and have two children $P$ and $Q$. $Z$ is the grandfather of the daughter $S$ of $P$. Further,  $Z$ and $W$ are married and are parents of $R$.Which of the following must necessarily be FALSE?
+    \begin{enumerate}
+        \item $X$ is the mother-in-law of $R$
+        \item $P$ and $R$ are not married to each other
+        \item $P$ is a son of $X$ and $Y$
+        \item $Q$ cannot be married to $R$
+    \end{enumerate}
+    \item $1200$ men and $500$ women can build a bridge in $2$ weeks. $900$ men and $250$ women will take $3$ weeks to build the same bridge. How many men will be needed to build the bridge in one week?
+    \begin{enumerate}
+        \item $3000$
+        \item $3300$
+        \item $3600$
+        \item $3900$
+    \end{enumerate}
+    \item The number of $3-digit$ numbers such that the digit $1$ is never to the immediate right of $2$ is 
+    \begin{enumerate}
+        \item $781$
+        \item $791$
+        \item $881$
+        \item $891$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
