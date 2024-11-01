@@ -1,0 +1,262 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2020-ME- 14-26}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{13}
+    \item Which of the following function $f\brak{z},$ of the complex variable $z$, is NOT analytic at all points on the complex plane?
+    \begin{enumerate}
+        \item $f\brak{z}=z^2$
+        \item $f\brak{z}=e^z$
+        \item $f\brak{z}=\sin{z}$
+        \item $f\brak{z}=\log z$
+    \end{enumerate}
+    \item The members carrying zero force \brak{\text{$i\cdot e\cdot$ zero-force members}} in the truss shown in the figure, for any load $P\textgreater 0$ with no appreciable deformation of the truss \brak{\text{$i\cdot e\cdot$ with no appreciable change in angles between the members}}, are
+    \begin{circuitikz} [scale=0.6]
+\tikzstyle{every node}=[font=\large]
+\draw [short] (6.5,10) -- (17.25,10);
+\draw [short] (6.5,10) -- (9.75,12.75);
+\draw [short] (9.75,12.75) -- (12.75,10);
+\draw [short] (12.75,10) -- (15.75,12.75);
+\draw [short] (15.75,12.75) -- (19.5,10);
+\draw [short] (17.25,10) -- (19.5,10);
+\draw [short] (9.75,12.75) -- (15.75,12.75);
+\draw [short] (12.75,10) -- (12.75,12.75);
+\draw [->, >=Stealth] (12.75,10) -- (12.75,7.25);
+\draw [short] (9.75,12.75) -- (9.75,10);
+\draw [short] (15.75,12.75) -- (15.75,10);
+\draw [short] (9,12.75) -- (5.5,12.75);
+\draw [short] (6,10) -- (5.5,10);
+\draw [<->, >=Stealth] (5.75,12.75) -- (5.75,10);
+\draw [short] (6.5,10.25) -- (6,9.75);
+\draw [short] (6.5,10.25) -- (7,9.75);
+\draw [short] (7,9.75) -- (6,9.75);
+\draw [short] (19,10.25) -- (19.75,9.5);
+\draw [short] (19,10.25) -- (20,10.25);
+\draw [short] (19.75,9.5) -- (20.25,10.25);
+\draw [short] (20.25,10.25) -- (19.75,10.25);
+\draw [short] (19.75,9) -- (20.75,10.5);
+\draw [dashed] (20.75,10.5) -- (21.5,11.5);
+\draw [dashed] (21,10.75) -- (22.75,10.75);
+\draw [short] (15.75,9.75) -- (15.75,9);
+\draw [short] (19.5,9.75) -- (19.5,9);
+\draw [short] (9.75,9.75) -- (9.75,9);
+\draw [short] (6.5,9.75) -- (6.5,9);
+\draw [<->, >=Stealth] (6.5,9.25) -- (9.75,9.25);
+\draw [<->, >=Stealth] (9.75,9.25) -- (12.75,9.25);
+\draw [<->, >=Stealth] (12.75,9.25) -- (15.75,9.25);
+\draw [<->, >=Stealth] (15.75,9.25) -- (19.5,9.25);
+\node [font=\normalsize] at (7.75,9) {$1$ m};
+\node [font=\normalsize] at (11.25,9) {$1$ m};
+\node [font=\normalsize] at (14,9) {$1$ m};
+\node [font=\normalsize] at (17.5,9) {$1$ m};
+\node [font=\normalsize] at (5.25,11.25) {$1$ m};
+\node [font=\large] at (6.5,10.75) {A};
+\node [font=\large] at (9.5,10.5) {B};
+\node [font=\large] at (12.5,9.75) {C};
+\node [font=\large] at (15.5,10.5) {D};
+\node [font=\large] at (19.25,10.75) {E};
+\node [font=\large] at (9.75,13.25) {F};
+\node [font=\large] at (12.75,13) {G};
+\node [font=\large] at (15.75,13) {H};
+\node [font=\large] at (12.75,6.75) {P};
+\node [font=\large] at (22.75,11.5) {$45\degree$};
+\draw [<->, thick] (22,10.75) to[bend right=45] (21.25,11.25);
+\draw (20.3,10.1) circle (0.135 cm);
+\draw (20,9.7) circle (0.135 cm);
+\end{circuitikz}
+    \begin{enumerate}
+        \item $BF$ and $DH$ only
+        \item $BF,DH$ and $GC$ only
+        \item $BF,DH,GC,CD$ and $DE$ only
+        \item $BF,DH,GC,FG$ and $GH$ only
+    \end{enumerate}
+    \item A single-degree-of-freedom oscillator is subjected to harmonic excitation $F\brak{t}=F_0\cos\brak{\omega t}$ as shown in the figure.\\
+    
+    \begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (12,11.75) to[R] (12,10.25);
+\draw (12,10.25) to (12,10) node[cground]{};
+\draw (12.5,10.5) to (12.5,10) node[cground]{};
+\draw [short] (12.25,10.5) -- (12.75,10.5);
+\draw [short] (12.75,10.5) -- (12.75,11);
+\draw [short] (12.25,10.5) -- (12.25,11);
+\draw [short] (12.25,10.75) -- (12.75,10.75);
+\draw [short] (12.5,10.75) -- (12.5,11.75);
+\draw [short] (11.5,11.75) -- (13,11.75);
+\draw [short] (13,11.75) -- (13,13);
+\draw [short] (11.5,11.75) -- (11.5,13);
+\draw [short] (11.5,13) -- (13,13);
+\draw [->, >=Stealth] (12.25,13) -- (12.25,14.25);
+\node [font=\Large] at (12.25,12.5) {m};
+\node [font=\large] at (12.75,14.5) {F(t)};
+\node [font=\large] at (11.5,11) {k};
+\node [font=\large] at (13,10.75) {c};
+\end{circuitikz}\\
+The non-zero value of $\omega$, for which  the amplitude of the force transmitted to the ground will be $F_0$, is
+    \begin{enumerate}
+        \item $\sqrt{\frac{k}{2m}}$
+        \item $\sqrt{\frac{k}{m}}$
+        \item $\sqrt{\frac{2k}{m}}$
+        \item 2$\sqrt{\frac{k}{m}}$
+    \end{enumerate}
+    \item The stress state at a point in a material under plane stress condition is equi-biaxial tension with a magnitude of $10\,MPa$. If one unit on the $\sigma-\tau$ plane is $1\,MPa$, the Mohr's circle representation of the state-of-stress is given by 
+    \begin{enumerate}
+        \item a circle with a radius equal to principal stress and its center at the origin of the $\sigma-\tau$ plane
+        \item a point on the $\sigma$ axis at a distance of $10$ units from the origin 
+        \item a circle with a radius of $10$ units on the $\sigma-\tau$ plane
+        \item a point on the $\tau$ axis at a distance of $10$ units from the origin
+    \end{enumerate}
+    \item A four bar mechanism is shown below.\\
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [short] (10,9.25) -- (8.75,10.75);
+\draw [short] (8.75,10.75) -- (14,12.25);
+\draw [short] (14,12.25) -- (14,9.75);
+\draw [short] (14,9.5) -- (14,9.75);
+\draw (10,9.25) to (10,9) node[cground]{};
+\node [font=\normalsize] at (11,11.75) {600 mm};
+\node [font=\normalsize] at (14.75,11) {300 mm};
+\node [font=\normalsize] at (11.75,9) {400 mm};
+\node [font=\normalsize] at (9.5,9.25) {P};
+\node [font=\normalsize] at (8.5,10.75) {Q};
+\node [font=\normalsize] at (14.25,12.5) {R};
+\node [font=\normalsize] at (14.25,9.5) {S};
+\draw (10,9.25) to[short] (14,9.25);
+\draw (14,9.5) to (14,9) node[cground]{};
+\draw [short] (10,9.25) -- (9.75,8.5);
+\draw [short] (10,9.25) -- (10.25,8.5);
+\draw [short] (14,9.25) -- (13.75,8.5);
+\draw [short] (14,9.25) -- (14.25,8.5);
+\end{circuitikz}\\
+For the mechanism to be a crank-rocker mechanism, the length of the link $PQ$ can be
+    \begin{enumerate}
+        \item $80\, mm$
+        \item $200\, mm$
+        \item $300\, mm$
+        \item $350\, mm$
+    \end{enumerate}
+    \item A helical gear with $20\degree$ pressure angle and $30\degree$ helix angle mounted at the mid-span of a shaft that is supported between two bearings at the ends. The nature of the stresses induced in the shaft is 
+    \begin{enumerate}
+        \item normal stress due to bending only
+        \item normal stress due to bending in one plane and axial loading; shear stress due to torsion
+        \item normal stress due to bending in two planes and axial loading; shear stress due to torsion
+        \item normal stress due to bending in one plane; shear stress due to torsion
+    \end{enumerate}
+    \item The crystal structure of $\gamma$ ion \brak{\text{austenite phase}} is
+    \begin{enumerate}
+        \item BCC
+        \item FCC 
+        \item HCP
+        \item BCT
+    \end{enumerate}
+    \item Match the following.
+	\begin{table}[H]    
+  \centering
+  \input{tables/table1.tex}
+  \label{tab1.1.9.2}
+\end{table}
+    
+    \begin{enumerate}
+        \item $P-2,Q-3,R-4,S-1$
+        \item $P-1,Q-1,R-3,S-2$
+        \item $P-3,Q-3,R-1,S-3$
+        \item $P-4,Q-3,R-2,S-1$
+    \end{enumerate}
+    \item The base of a brass bracket needs rough grinding. For this purpose, the most suitable grinding wheel grade specification is
+    \begin{enumerate}
+        \item $C30Q12V$
+        \item $A50G8V$
+        \item $C90J4B$
+        \item $A30D12V$
+    \end{enumerate}
+    \item In the critical Path Method \brak{CPM}, the cost-time slope of an activity is given by 
+    \begin{enumerate}
+        \item $\frac{\text{Crash Cost - Normal Cost}}{\text{Crash Time}}$
+        \item $\frac{\text{Normal Cost}}{\text{Crash Time - Normal Time}}$
+        \item $\frac{\text{Crash Cost}}{Crash Time - Normal Time}$
+        \item $\frac{\text{Crash Cost - Normal Cost}}{\text{Normal Time - Crash Time}}$
+    \end{enumerate}
+    \item Froude number is the ratio of 
+    \begin{enumerate}
+        \item buoyancy forces to viscous forces 
+        \item inertia forces to viscous forces
+        \item buoyancy forces to inertia forces
+        \item inertia forces to gravity forces
+    \end{enumerate}
+    \item Match the following non-dimensional numbers with the corresponding definitions $\colon$
+	\begin{table}[H]    
+  \centering
+  \input{tables/table2.tex}
+  \label{tab1.1.9.2}
+\end{table}
+
+    \begin{enumerate}
+        \item $P-1,Q-3,R-2,S-4$
+        \item $P-3,Q-1,R-2,S-4$
+        \item $P-4,Q-3,R-1,S-2$
+        \item $P-3,Q-1,R-4,S-2$
+    \end{enumerate}
+    \item The velocity field of an incompressible flow in a Cartesian system is repressented by 
+    $$\overrightarrow{V}=2\brak{x^2-y^2}\hat{i}+v\hat{j}+3\hat{k}$$
+    Which one of the following expressions for $v$ is valid?
+    \begin{enumerate}
+        \item $-4xz+6xy$
+        \item $-4xy-4xz$
+        \item $4xz-6xy$
+        \item $4xy+4xz$
+    \end{enumerate}
+\end{enumerate}
+\end{document}
