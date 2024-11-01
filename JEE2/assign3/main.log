@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  9 OCT 2024 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  1 NOV 2024 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2206,37 +2206,37 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 58
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 65.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 66.
 
 LaTeX Font Info:    Trying to load font information for OML+txr on input line 6
-5.
+6.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 65.
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 66.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 65.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 66.
 
 
-Underfull \hbox (badness 2772) in paragraph at lines 65--67
+Underfull \hbox (badness 2772) in paragraph at lines 66--69
 []\OT1/txr/m/n/10 Let $\OML/txmi/m/it/10 y \OT1/txr/m/n/10 = \OML/txmi/m/it/10 
 y []$ \OT1/txr/m/n/10 be the so-lu-tion of the dif-fer-en-tial equa-tion, $\OML
 /txmi/m/it/10 xy\OMS/txsy/m/n/10 0 ^^@ \OML/txmi/m/it/10 y \OT1/txr/m/n/10 =
  []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 86.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 90.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 86.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 90.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 86.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 90.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 86.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 90.
 
 [1
 Non-PDF special ignored!
@@ -2274,14 +2274,14 @@ Here is how much of TeX's memory you used:
  77023 multiletter control sequences out of 15000+600000
  622644 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,6n,109p,1194b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,6n,109p,1194b,1033s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on main.pdf (2 pages, 42297 bytes).
+Output written on main.pdf (2 pages, 42589 bytes).
 PDF statistics:
  111 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
