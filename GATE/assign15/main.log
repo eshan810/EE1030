@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  1 NOV 2024 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.28)  2 NOV 2024 10:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2209,23 +2209,23 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 59
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 66.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 59.
 
-LaTeX Font Info:    Trying to load font information for OML+txr on input line 6
-6.
+LaTeX Font Info:    Trying to load font information for OML+txr on input line 5
+9.
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxr.fd
 File: omltxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OML/txr/m/n' in size <10> not available
-(Font)              Font shape `OML/txmi/m/it' tried instead on input line 66.
+(Font)              Font shape `OML/txmi/m/it' tried instead on input line 59.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 66.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 59.
 
 ! Undefined control sequence.
 \degree  ->\ifmmode \tcdegree 
                               \else \textdegree \fi 
-l.115 ...[font=\large] at (22.75,11.5) {$45\degree
+l.108 ...[font=\large] at (22.75,11.5) {$45\degree
                                                   $};
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2234,12 +2234,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 5607) in paragraph at lines 66--121
+Underfull \hbox (badness 5607) in paragraph at lines 59--114
 []\OT1/txr/m/n/10 The mem-bers car-ry-ing zero force $[]$ in the truss
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 66--121
+Underfull \hbox (badness 2837) in paragraph at lines 59--114
 \OT1/txr/m/n/10 shown in the fig-ure, for any load $\OML/txmi/m/it/10 P[]\OT1/t
 xr/m/n/10 0$ with no ap-pre-cia-ble de-for-ma-tion
  []
@@ -2349,7 +2349,7 @@ nts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (4 pages, 69867 bytes).
+Output written on main.pdf (4 pages, 69879 bytes).
 PDF statistics:
  178 PDF objects out of 1000 (max. 8388607)
  138 compressed objects within 2 object streams
