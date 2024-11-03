@@ -1,0 +1,328 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2021-EE- 53-65}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{52}
+    \item Consider a continuous-time signal $x\brak{t}$ defined by $x\brak{t}=0$ for $\abs{t}\textgreater1$, and $x\brak{t}=1-\abs{t}$ for $\abs{t}\leq1$. Let the Fourier transform of $x\brak{t}$ be defined as $X\brak{\omega}=\int_{-\infty}^{\infty}x\brak{t}e^{-j\omega t}\,dt$. The maximum magnitude of $X\brak{\omega}$ is \dots
+    \item A belt-driven DC shunt generator running at $300\, RPM$ delivers $100\, kW$ to a $200\, V$ DC grid. It continues to run as a motor when the belt breaks, taking $10\, kW$ from the DC grid. The armature resistance is $0.025\, \Omega$, field resistance is $50\, \Omega$, and brush drop is $2\, V$. Ignoring armature reaction, the speed of the motor is \dots RPM. \brak{\text{Round off to 2 decimal places.}}
+    \item An $8-pole,\, 50\, Hz$, three-phase, slip-ring induction motor has an effective rotor resistance of $0.08\, \Omega$ per phase. Its speed at maximum torque is $650\, RPM$. The additional resistance per phase that must be inserted in the rotor to achieve maximum torque at start is \dots $\Omega$. \brak{\text{Round off to 2 decimal places.}} Neglect magnetizing current and stator leakage impedance. Consider equivalent circuit parameters referred to stator
+    \item Consider a closed-loop system as shown. $G_p\brak{s}=\frac{14.4}{s\brak{1+0.1s}}$ is the plant transfer function and $G_c\brak{s}=1$ is the compensator. For a unit-step input , the output response has damped oscillations. The damped natural frequency is \dots $\frac{rad}{s}$. \brak{\text{Round off to 2 decimal places.}}
+
+
+    \begin{circuitikz}[scale=0.5]
+\tikzstyle{every node}=[font=\Large]
+\draw  (18.5,13.75) circle (0.5cm);
+\draw [short] (18,13.75) -- (15.75,13.75);
+\draw [short] (18.5,13.25) -- (18.5,10.25);
+\draw [->, >=Stealth] (19,13.75) -- (21,13.75);
+\draw  (21,14.75) rectangle (23.25,12.75);
+\draw [->, >=Stealth] (23.25,13.75) -- (29.25,13.75);
+\draw  (29.25,15) rectangle (32.25,12.75);
+\draw [->, >=Stealth] (32.25,13.75) -- (36.25,13.75);
+\draw [short] (34,13.75) -- (34,10.25);
+\draw [short] (18.5,10.25) -- (34,10.25);
+\node [font=\large] at (22.25,13.75) {$G_c\brak{s}$};
+\node [font=\Large] at (30.75,14) {$G_p\brak{s}$};
+\node [font=\Large] at (34,14.5) {C\brak{s}};
+\node [font=\Large] at (20,14.5) {E\brak{s}};
+\node [font=\Large] at (15.75,14.5) {R\brak{s}};
+\node [font=\normalsize] at (17.75,14.25) {$+$};
+\node [font=\Large] at (18.75,13) {$-$};
+\draw [->, >=Stealth] (18.5,10.25) -- (18.5,12.75);
+\draw [->, >=Stealth] (15.75,13.75) -- (17.5,13.75);
+\end{circuitikz}
+    \item In the given figure, plant $G_p\brak{s}=\frac{2.2}{\brak{1+0.1s}\brak{1+0.4s}\brak{1+1.2s}}$ and compensator $G_c\brak{s}=K\brak{\frac{1+T_1s}{1+T_2s}}$. The external disturbance input is $D\brak{s}$. It is desired that when the disturbance is a unit step, the steady-state error should not exceed $0.1$ unit. The minimum value of $K$ is \dots.\\
+    \brak{\text{Round off to 2 decimal places.}}
+    
+    \begin{circuitikz}[scale=0.5]
+\tikzstyle{every node}=[font=\Large]
+\draw  (18.5,13.75) circle (0.5cm);
+\draw [short] (18,13.75) -- (15.75,13.75);
+\draw [short] (18.5,13.25) -- (18.5,10.25);
+\draw [->, >=Stealth] (19,13.75) -- (21,13.75);
+\draw  (21,14.75) rectangle (23.25,12.75);
+\draw  (29.25,15) rectangle (32.25,12.75);
+\draw [->, >=Stealth] (32.25,13.75) -- (36.25,13.75);
+\draw [short] (34,13.75) -- (34,10.25);
+\draw [short] (18.5,10.25) -- (34,10.25);
+\node [font=\Large] at (22.25,13.75) {$G_s$};
+\node [font=\Large] at (30.75,14) {$G_p$};
+\node [font=\Large] at (34,14.5) {C\brak{s}};
+\node [font=\Large] at (20,14.5) {E\brak{s}};
+\node [font=\Large] at (15.75,14.5) {R\brak{s}};
+\node [font=\normalsize] at (17.75,14.25) {$+$};
+\node [font=\Large] at (18.75,13) {$-$};
+\draw [->, >=Stealth] (18.5,10.25) -- (18.5,12.75);
+\draw [->, >=Stealth] (15.75,13.75) -- (17.5,13.75);
+\draw  (26.25,13.75) circle (0.5cm);
+\draw [->, >=Stealth] (23.25,13.75) -- (25.75,13.75);
+\draw [->, >=Stealth] (26.75,13.75) -- (29.25,13.75);
+\draw [->, >=Stealth] (26.25,16.25) -- (26.25,14.25);
+\node [font=\large] at (26.25,16.75) {\textbf{D\brak{s}}};
+\node [font=\large] at (26.75,14.5) {\textbf{+}};
+\node [font=\large] at (25.75,13.25) {\textbf{+}};
+\end{circuitikz}
+\item The waveform shown in solid line is obtained by clipping a full-wave rectified sinusoid \brak{\text{shown dashed}}. The ratio of RMS value of the full-wave rectified waveform to the RMS value of the clipped waveform is \dots.\\
+\brak{\text{Round off to 2 decimal places.}}
+
+    \begin{circuitikz}[scale=0.5]
+\tikzstyle{every node}=[font=\Large]
+\draw [->, >=Stealth] (20,10) -- (20,15.75);
+\draw [short] (20,11) -- (21.25,12.75);
+\draw [short] (21.25,12.75) -- (23,12.75);
+\draw [short] (23,12.75) -- (24.25,11);
+\draw [short] (24.25,11) -- (25.5,12.75);
+\draw [short] (25.5,12.75) -- (27.25,12.75);
+\draw [short] (27.25,12.75) -- (28.75,11);
+\draw [short] (28.75,11) -- (30,12.75);
+\draw [short] (30,12.75) -- (31.75,12.75);
+\draw [dashed] (21.5,12.75) -- (20,12.75);
+\draw [dashed] (21.25,14) -- (21.25,10.25);
+\draw [dashed] (23,14.25) -- (23,10.5);
+\draw [->, >=Stealth] (19.25,11) -- (35.75,11);
+\node [font=\Large] at (35.5,10.5) {$\omega t$};
+\draw [short] (31.75,12.75) -- (33.25,11);
+\draw [short] (33.25,11) -- (34.5,12);
+\node [font=\Large] at (33.25,10.5) {3$\pi$};
+\node [font=\Large] at (28.75,10.5) {2$\pi$};
+\node [font=\Large] at (24.25,10.5) {$\pi$};
+\node [font=\Large] at (19.75,10.5) {$0$};
+\node [font=\Large] at (21.25,10.25) {$\frac{\pi}{4}$};
+\node [font=\Large] at (22.75,10.25) {$\frac{3\pi}{4}$};
+\node [font=\large] at (18.3,12.75) {$0.707\, V_m$};
+\node [font=\large] at (19.25,14) {$V_m$};
+\draw[dashed] (21.25,12.75) arc[start angle=180, end angle=0, radius=0.875 cm];
+\draw[dashed] (27.25,12.75) arc[start angle=0, end angle=180, radius=0.875 cm];
+\draw[dashed] (31.75,12.75) arc[start angle=0, end angle=180, radius=0.875 cm];
+\draw [dashed] (22,13.625) -- (20,13.635);
+\end{circuitikz}
+    \item The state space representation of a first-order system is given by \\
+    $\Dot{x}=-x+u$\\
+    $y=x$\\
+    where, $x$ is the state variable, $u$ is the control input and $y$ is the controlled output. Let $u=-Kx$ be the control law, where $K$ is the controller gain. To place a closed-loop pole at $-2$, the value of $K$ is \dots
+    \item An air-core radio-frequency transformer as shown has a primary winding and a secondary winding. The mutual inductance $M$ between the windings of the transformer is \dots $\mu H$.\\
+    \brak{\text{Round off to 2 decimal places.}}
+    
+   \begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (10.5,10.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (10.5,12.5);
+\draw (13.4,12.5) to[L ] (13.4,11.75);
+\draw (14.1,11.75) to[L] (14.1,12.5);
+\draw[thick] (13.7,12.5) -- (13.7,11.75);
+\draw[thick] (13.8,12.5) -- (13.8,11.75);
+\draw[thick] (10.5,12.75) -- (13.4,12.75);
+\draw[thick] (13.4,12.75) -- (13.4,12.57);
+\draw[thick] (14.1,12.75) -- (14.1,12.57);
+\draw[thick] (10.5,12.75) -- (10.5,12.5);
+\draw[thick] (14.1,12.75) to [short, -o] (14.5,12.75);
+\draw[thick] (13.4,11.68) -- (13.4,11.57);
+\draw[thick] (14.1,11.68) -- (14.1,11.57);
+\draw[thick] (14.1,11.57) to [short, -o] (14.5,11.57);
+\draw[thick] (13.4,11.57) -- (12.9,11.57);
+\draw[thick] (12.9,9.57) to[short,R] (12.9,10.57);
+\draw[thick] (12.9,11.57) -- (12.9,10.57);
+\draw[thick] (12.9,11.07) to[short, -o] (14.5,11.07);
+\draw (12.9,9.57) to (12.9,8.77) node[ground]{};
+\draw[thick] (12.9,9.07) to [short, -o] (14.5,9.07);
+\draw[thick] (10.5,9.07) -- (12.9,9.07);
+\draw[thick] (10.5,9.07) -- (10.5,10.75);
+ \fill (12.9, 12.5) circle (2 pt);
+  \fill (14.4, 12.5) circle (2 pt);
+   \fill (12.9, 11.07) circle (2 pt);
+ \fill (12.9, 9.07) circle (2 pt);
+  \draw[<->, thick,bend right] (14.5,13.25) to (12.75, 13.25);
+  \node [font=\large] at (15,10.07) {$5.0\,V_{p-p}$};
+   \node [font=\large] at (15.25,12.15) {$7.3\,V_{p-p}$};
+      \node [font=\large] at (13.8,13.75) {$M$};
+         \node [font=\Large] at (12,10.07) {$22\,\ohm$};
+            \node [font=\large] at (9.6,11) {$100\,kHz$};
+\end{circuitikz}
+    \item A $100\,Hz$ square wave, switching between $0\,V$ and $5\,V$, is applied to a CR high-pass filter circuit as shown. The output voltage waveform across the resistor is $6.2\,V$ peak-to-peak. If the resistance $R$ is $820\,\ohm$, then the value $C$ is \dots $\mu F$.\\
+    \brak{\text{Round off to 2 decimal places.}}
+    
+    \begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (10.25,11.5) to[C] (12.25,11.5);
+\draw (12.25,11.5) to[short, -o] (15,11.5) ;
+\draw (10.5,11.5) to[short, -o] (9.5,11.5) ;
+\draw (13,11.5) to[R] (13,9.75);
+\draw (13,9.75) to[short, -o] (9.5,9.75) ;
+\draw (13,9.75) to[short, -o] (15,9.75) ;
+\node [font=\large] at (11.25,12.25) {C};
+\node [font=\large] at (12.25,10.75) {R};
+\node [font=\large] at (9.5,10.75) {input};
+\node [font=\large] at (15,10.75) {output};
+\end{circuitikz}
+    \item A CMOS Schmitt-trigger inverter has a low output level of $0\,V$ and a high output level of $5\,V$. It has input thresholds of $1.6\,V$ and $2.4\,V$. The input capacitance and ouput resistance of the Schmitt-trigger are negligible. The frequency of the oscillator shown is \dots Hz.\\
+    \brak{\text{Round off to 2 decimal places.}}
+    
+\begin{circuitikz}
+    % Draw the inverter
+    \draw (2,4) node[american not port, rotate=0, scale=1.5]  {};
+
+    % Draw the capacitor
+    \draw (0,1) to[C, l_=47~nF] (0,0) node[ground]{};
+
+    % Connect the resistor
+    \draw (0,2)  to[R] (4,2) ;
+
+    % Draw the output line
+   \draw[thick] (0,1) -- (0,4);
+   \draw[thick] (0,4) -- (1,4);
+   \draw[thick] (3,4) -- (5.5,4);
+   \draw[thick] (4,2) -- (4,4);
+   \fill (5.5,4) circle (2 pt);
+   \node[font=\Large] at (2,1.5) {$10\,k\ohm$};
+\end{circuitikz}
+    \item Consider the boost converter shown. Switch Q is operating at $25\,kHz$ with a duty cycle of $0.6$. Assume the diode and switch to be ideal. Under steady-state condition, the average resistance $R_{in}$ as seen by the source is \dots $\ohm$.\\
+    \brak{\text{Round off to 2 decimal places.}}
+    
+    \begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (8.75,12.5) to[american voltage source] (8.75,10.75);
+\draw (8.75,12.5) to[L ] (12.75,12.5);
+\draw (12.5,12.5) to[D] (15.75,12.5);
+\draw (15.75,12.5) to[curved capacitor] (15.75,10.5);
+\draw (15.75,12.5) to[short] (17,12.5);
+\draw (15.75,10.5) to[short] (8.75,10.5);
+\draw (8.75,10.5) to[short] (8.75,11);
+\draw (17,12.5) to[R] (17,10.5);
+\draw (17,10.5) to[short] (15.75,10.5);
+\draw (12.75,10.5) to[Tnpn, transistors/scale=1.19] (12.75,12.5);
+\draw (11.5,11.75) to[square voltage source, sources/symbol/rotate=auto] (11.5,11.25);
+\draw (10.5,11.25) to[short] (10.5,9);
+\draw [->, >=Stealth] (10.5,11.25) -- (11,11.25);
+\node [font=\large] at (17.75,11.5) {$10$ $\Omega$};
+\node [font=\large] at (10.75,13) {$1\, mH$};
+\node [font=\large] at (15,11.15) {$100\, \mu F$};
+\node [font=\large] at (7.75,11.6) {$15$ $V$};
+\node [font=\large] at (10.5,8.75) {$R_{in}$};
+\end{circuitikz}
+    \item Consider the buck-boost converter shown. Switch Q is operating at $25\,kHz$ with a duty cycle of $0.75$. Assume the diode and switch to be ideal. Under steady-state condition, the average current flowing through teh inductor is \dots $A$.\\
+    
+
+    \begin{circuitikz}
+\tikzstyle{every node}=[font=\Large]
+\draw (9,12.75) to[american voltage source] (9,10.5);
+\draw (12.75,12.75) to[Tnpn, transistors/scale=1.19] (10.5,12.75);
+\draw (9,12.75) to[short] (10.5,12.75);
+\draw (16.25,12.75) to[D] (12.5,12.75);
+\draw (16.5,10.75) to[curved capacitor] (16.5,12.75);
+\draw (18.25,12.75) to[R] (18.25,10.5);
+\draw (16.25,12.75) to[short] (18.25,12.75);
+\draw (18.25,10.5) to[short] (9,10.5);
+\draw (16.5,10.5) to[short] (16.5,11);
+\draw (13.25,12.75) to[L ] (13.25,10.5);
+\draw (11.75,11.25) to[square voltage source, sources/symbol/rotate=auto] (11.25,11.25);
+\draw [->, >=Stealth] (9,12.75) -- (9.75,12.75);
+\draw [->, >=Stealth] (18.25,12.25) -- (18.25,12.75);
+\node [font=\Large] at (7.75,11.75) {20 V};
+\node [font=\Large] at (9.25,13.25) {$I_{in}$};
+\node [font=\Large] at (18.75,12.75) {$I_0$};
+\node [font=\Large] at (19,11.75) {$10$ $\Omega$};
+\node [font=\Large] at (15.25,11.25) {$100$ $\mu$ $F$};
+\node [font=\large] at (12.5,11.75) {$1\, mH$};
+\node [font=\Large] at (11.5,13.25) {Q};
+\end{circuitikz}
+    \item A single-phase full-bridge inverter fed by a $325\,V$ DC produces a symmetric quasi-square waveform across $'ab'$ as shown. To achieve a modulation index of $0.8$, the angle $\theta$ expressed in degrees should be \dots.\\
+    \brak{\text{Round off to 2 decimal places.}}\\ \\
+    \brak{\parbox{0.95\textwidth}{\text{Modulation index is defined as the ratio of the peak of the fundamental  component} $v_{ab}$ \text{to the applied DC value.}}}
+        
+
+   \begin{circuitikz}[scale=0.4]
+\tikzstyle{every node}=[font=\Large]
+\draw (9.5,14.25) to[battery ] (9.5,7.5);
+\draw (9.5,14.25) to[short] (16.75,14.25);
+\draw [short] (13.25,14.25) -- (13.25,13.5);
+\draw (13.25,8.5) to[short, -o] (13.25,12.75) ;
+\draw [short] (13.25,13.5) -- (12.75,12.75);
+\draw [short] (13.25,8.5) -- (13,8);
+\draw [short] (9.5,7.5) -- (9.5,7.25);
+\draw [short] (9.5,7.25) -- (17,7.25);
+\draw (13.25,7.25) to[short, -o] (13.25,7.75) ;
+\draw [short] (16.75,14.25) -- (16.75,13.75);
+\draw [short] (16.75,13.75) -- (16.25,13);
+\draw (16.75,8.5) to[short, -o] (16.75,12.75) ;
+\draw [short] (16.75,8.5) -- (16.5,8);
+\draw (16.75,7.25) to[short, -o] (16.75,7.75) ;
+\draw (13.25,9.75) to[short] (19.375,9.75);
+\draw (16.75,11.75) to[short] (19.375,11.75);
+\draw  (19.25,11.25) rectangle (19.5,10.25);
+\draw [short] (19.375,11.25) -- (19.375,11.75);
+\draw [short] (19.375,10.25) -- (19.375,9.75);
+\node [font=\normalsize] at (7.25,10.75) {$325\, V$};
+\node [font=\normalsize] at (16.25,11.75) {a};
+\node [font=\normalsize] at (12.85,10) {b};
+\draw [line width=0.6pt, ->, >=Stealth] (25.25,10.75) -- (36.5,10.75);
+\draw [line width=0.6pt, ->, >=Stealth] (27,8.25) -- (27,17);
+\draw [ line width=0.6pt ] (27.75,10.75) rectangle (29.25,12);
+\draw [ line width=0.6pt ] (31.25,10.75) rectangle (32.75,9.5);
+\draw [line width=0.6pt, dashed] (31.25,9.5) -- (27,9.5);
+\draw [line width=0.6pt, dashed] (28.5,12) -- (26.75,12);
+\draw [line width=0.6pt, dashed] (28.5,13.25) -- (28.5,10.5);
+\draw [line width=0.6pt, dashed] (30.25,10.75) -- (30.25,13.25);
+\node [font=\large] at (36.25,10.25) {$\omega t$ };
+\node [font=\large] at (26.25,17) {$V_{ab}$};
+\node [font=\normalsize] at (25.5,12.25) {$325 V$};
+\node [font=\normalsize] at (25.5,9.5) {$-325 V$};
+\node [font=\normalsize] at (28.5,10.25) {$\frac{\pi}{2}$};
+\node [font=\normalsize] at (30.25,10.25) {$\pi$};
+\node [font=\normalsize] at (34,10.25) {2$\pi$};
+\node [font=\large] at (27.75,10.25) {\textbf{$\theta$}};
+\end{circuitikz}
+   
+\end{enumerate}
+\end{document}
