@@ -1,0 +1,313 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}  % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tikz}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2022-CE- 40-52}
+\author{EE24BTECH11021 - Eshan Ray}
+
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\begin{enumerate}
+\setcounter{enumi}{39}
+    \item The correct match between the physical states of the soils given in $\vec{Group\, I}$ and
+the governing conditions given in $\vec{Group\, II}$ is 
+\begin{table}[H]    
+  \centering
+  \input{tables/table1.tex}
+ \end{table}
+
+\begin{enumerate}
+    \item $1-S, 2-P, 3-Q, 4-R$
+    \item $1-Q, 2-S, 3-P, 4-R$
+    \item $1-Q, 2-P, 3-R, 4-S$
+    \item $1-S, 2-Q, 3-P, 4-R$
+\end{enumerate}
+    \item As per Rankine's theory of earth pressure, the inclination of failure planes is          $\brak{45+\frac{\phi}{2}}^\degree$ with respect to the direction of the minor principal stress.\\ \\
+    The above statement is correct for which one of the following options? 
+    \begin{enumerate}
+        \item Only the active state and not the passive state
+        \item Only the passive state and not the active state
+        \item Both active as well as passive states
+        \item Neither active nor passive state 
+    \end{enumerate}
+    \item Henry's law constant for transferring $O_2$ from air into water, at room temperature, is $1.3\,\frac{mmol}{liter-atm}$ . Given that the partial pressure of $O_2$ in the atmosphere is $0.21\, atm$, the concentration of dissolved oxygen $\brak{\frac{mg}{liter}}$ in water in equilibrium with the atmosphere at room temperature is \\ \\
+    \brak{\text{Consider the molecular weight of}\, O_2\, \text{as}\, 32 \frac{g}{mol} }
+    \begin{enumerate}
+        \item $8.7$
+        \item $0.8$
+        \item $198.1$
+        \item $0.2$
+    \end{enumerate}
+    \item In a water sample, the concentrations of $Ca^{2+}, Mg^{2+}$ and $HCO3^-$ are $\vec{100\,\frac{mg}{L}},\vec{36\,\frac{mg}{L}}$ and $\vec{122\,\frac{mg}{L}}$, respectively. The atomic masses of various elements are $\colon$ \\
+    Ca = $\vec{40}$, Mg = $\vec{24}$, H = $\vec{1}$, C = $\vec{12}$, O = $\vec{16}$. \\ \\
+    The total hardness and the temporary hardness in the water sample \brak{\text{in}\,\frac{mg}{L}\, \text{as}\, CaCO_3} will be 
+    \begin{enumerate}
+        \item $400$ and $100$, respectively.
+        \item $400$ and $300$, respectively.
+        \item $500$ and $100$, respectively.
+        \item $800$ and $200$, respectively. 
+    \end{enumerate}
+    \item Consider the four points P, Q, R, and S shown in the Greenshields fundamental
+speed-flow diagram. Denote their corresponding traffic densities by $k_P,k_Q,k_R$ and $k_S$, respectively. The correct order of these densities is 
+
+  \begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [line width=0.7pt, ->, >=Stealth] (9.75,9.25) -- (16.75,9.25);
+\draw [line width=0.7pt, ->, >=Stealth] (9.75,9.25) -- (9.75,14);
+\draw [line width=0.7pt, short] (9.75,13) .. controls (15.75,11.5) and (12.75,10.5) .. (9.75,9.25);
+\node [font=\large] at (9.25,13) {S};
+\node [font=\large] at (12,12.75) {R};
+\node [font=\large] at (14,11.5) {Q};
+\node [font=\large] at (9.5,9) {P};
+\node [font=\large] at (15,8.75) {Flow};
+\node [font=\large] at (8.75,11.25) {Speed};
+\fill (9.75,9.25) circle (2pt); % Small filled circle
+\fill (9.75,13) circle (2pt); % Small filled circle
+\fill (11.5,12.5) circle (2pt); % Small filled circle
+\fill (13.15,11.5) circle (2pt); % Small filled circle
+\end{circuitikz}
+    \begin{enumerate}
+        \item $k_P \textgreater k_Q \textgreater k_R \textgreater k_S$
+        \item $k_S\textgreater k_R\textgreater k_Q\textgreater k_P$
+        \item $k_Q\textgreater k_R\textgreater k_S\textgreater k_P$
+        \item $k_Q\textgreater k_R\textgreater k_P\textgreater k_S$
+    \end{enumerate}
+    \item Let max $\cbrak{a,b}$ denote the maximum of two real numbers $a$ and $b$.\\
+    Which of the following statement\brak{s} is/are TRUE about the function\\
+    $f\brak{x}=max\cbrak{3-x,x-1}$ ? 
+    \begin{enumerate}
+        \item It is continuous on its domain.
+        \item It has a local minimum at $x=2$.
+        \item It has a local maximum at $x=2$.
+        \item It is differentiable on its domain. 
+    \end{enumerate}
+    \item A horizontal force of $P\, kN$ is applied to a homogeneous body of weight $25\, kN$,
+    as shown in the figure. The coefficient of friction between the body and the
+floor is $0.3$. Which of the following statement\brak{s} is/are correct? 
+    
+  \begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw  (9.5,14.75) rectangle (13.5,9.25);
+\draw [->, >=Stealth] (15.75,14.75) -- (13.5,14.75);
+\draw [short] (13.5,15) -- (13.5,15.75);
+\draw [short] (9.5,15) -- (9.5,15.75);
+\draw [short] (9.25,14.75) -- (8.5,14.75);
+\draw [short] (9.25,9.25) -- (8.5,9.25);
+\draw [<->, >=Stealth] (9.5,15.25) -- (13.5,15.25);
+\draw [<->, >=Stealth] (9,14.75) -- (9,9.25);
+\node [font=\large] at (11.5,15.75) {1 m};
+\node [font=\large] at (8.5,12.25) {2 m};
+\node [font=\large] at (16.25,14.75) {P};
+\end{circuitikz}
+    \begin{enumerate}
+        \item The motion of the body will occur by overturning.
+        \item Sliding of the body never occurs.
+        \item No motion occurs for $P \leq6\, kN$.
+        \item The motion of the body will occur by sliding only. 
+    \end{enumerate}
+    \item In the context of cross-drainage structures, the correct statement(s) regarding
+    the relative positions of a natural drain $\brak{\frac{\text{stream}}{\text{river}}}$ and an irrigation canal, is/are 
+    \begin{enumerate}
+        \item In an aqueduct, natural drain water goes under the irrigation canal, whereas in a super-passage, natural drain water goes over the irrigation canal.
+        \item In a level crossing, natural drain water goes through the irrigation canal.
+        \item In an aqueduct, natural drain water goes over the irrigation canal, whereas in a super-passage, natural drain water goes under the irrigation canal.
+        \item In a canal syphon, natural drain water goes through the irrigation canal. 
+    \end{enumerate} 
+    \item Consider the differential equation 
+        $$\frac{dy}{dx}=4\brak{x+2}-y$$
+        For the initial condition $y=3$ at $x=1$, the value of $y$ at $x=1.4$ obtained using Euler's method with a step-size of $0.2$ is \dots . \brak{round\, off \, to\, one\, decimal\,place}
+    \item A set of observations of independent variable $\brak{x}$ and the corresponding
+    dependent variable $\brak{y}$ is given below. 
+	\begin{table}[H]    
+  \centering
+  \input{tables/table2.tex}
+ \end{table}
+ 
+    Based on the data, the coefficient $a$ of the linear regression model 
+        $$y=a+bx$$
+        is estimated as $6.1$\\
+        The coefficient $b$ is \dots 
+
+    \item The plane truss shown in the figure is subjected to an external force $P$. It is given
+that $P = 70\, kN$, $a = 2\, m$, and $b = 3\, m$. 
+    
+  \begin{circuitikz}[scale=0.8]
+\tikzstyle{every node}=[font=\Large]
+\draw [ line width=0.8pt](6.75,9) to[short, -o] (7.25,9.5) ;
+\draw [ line width=0.8pt](7.25,9.5) to[short, -o] (7.25,12) ;
+\draw [ line width=0.8pt](7.25,12) to[short, -o] (7.25,14.5) ;
+\draw [ line width=0.8pt](7.25,14.5) to[short, -o] (9.75,12) ;
+\draw [ line width=0.8pt](7.25,12) to[short, -o] (9.75,12) ;
+\draw [ line width=0.8pt](9.75,12) to[short, -o] (9.75,14.5) ;
+\draw [ line width=0.8pt](9.75,14.5) to[short, -o] (7.25,14.5) ;
+\draw [ line width=0.8pt](7.25,9.5) to[short, -o] (9.75,12) ;
+\draw [ line width=0.8pt](9.75,12) to[short, -o] (12.25,14.5) ;
+\draw [ line width=0.8pt](9.75,14.5) to[short, -o] (12.25,14.5) ;
+\draw [ line width=0.8pt](7.25,9.5) to[short] (7.75,9);
+\draw [ fill={rgb,255:red,88; green,81; blue,81} , line width=0.8pt ] (6.5,9) rectangle (8,8.75);
+\draw [ line width=0.8pt](12.25,14.5) to[short, -o] (12.25,11) ;
+\draw [ line width=0.8pt](12.25,11) to[short, -o] (15.75,14.5) ;
+\draw [ line width=0.8pt](15.75,14.5) to[short, -o] (19.25,11) ;
+\draw [ line width=0.8pt](12.25,11) to[short, -o] (19.25,11) ;
+\draw [ line width=0.8pt](12.25,14.5) to[short, -o] (15.75,14.5) ;
+\draw [ line width=0.8pt](19.25,11) to[short, -o] (19.25,14.5) ;
+\draw [ line width=0.8pt](15.75,14.5) to[short, -o] (19.25,14.5) ;
+\draw [ line width=0.8pt](15.75,14.5) to[short, -o] (15.75,11) ;
+\draw [ line width=0.8pt](19.25,11) to[short] (18.5,10.25);
+\draw [ line width=0.8pt](19.25,11) to[short] (20,10.25);
+\draw [ fill={rgb,255:red,88; green,81; blue,81} , line width=0.8pt ] (18,10.25) rectangle (20.5,10);
+\node [font=\large] at (6.75,11) {a};
+\node [font=\large] at (6.75,13.25) {a};
+\node [font=\large] at (8.25,15) {a};
+\node [font=\large] at (10.75,15) {a};
+\node [font=\large] at (14,15) {a};
+\node [font=\large] at (17.5,15) {a};
+\node [font=\large] at (19.75,13) {b};
+\node [font=\Large] at (6.75,12) {B};
+\node [font=\Large] at (6.75,9.75) {A};
+\node [font=\Large] at (6.75,14.75) {C};
+\node [font=\Large] at (9.75,15) {D};
+\node [font=\Large] at (12,10.5) {F};
+\node [font=\Large] at (15.75,15) {G};
+\node [font=\Large] at (15.75,10.5) {H};
+\node [font=\Large] at (19.25,15) {I};
+\node [font=\Large] at (19.75,11.25) {J};
+\draw [ color={rgb,255:red,247; green,2; blue,2}, line width=1.1pt, ->, >=Stealth] (12.25,15.75) -- (12.25,14.75);
+\node [font=\LARGE, color={rgb,255:red,247; green,2; blue,2}] at (12.5,16) {P};
+\node [font=\Large] at (12.75,15) {E};
+\end{circuitikz}
+    The magnitude \brak{\text{absolute value}} of force \brak{\text{in kN}} in member EF is \dots.
+    \brak{round\, off \, to\, one\, decimal\,place}
+    \item Consider the linearly elastic plane frame shown in the figure. Members $HF, FK$
+and $FG$ are welded together at joint $F$. Joints $K, G$ and $H$ are fixed supports. A
+counter-clockwise moment $M$ is applied at joint $F$. Consider flexural rigidity $EI = 10^5\, kN-m^2$ for each member and neglect axial deformations. 
+    
+
+ \begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw [ fill={rgb,255:red,93; green,86; blue,86} ] (10,14.75) rectangle (11.25,14.5);
+\draw [line width=1pt, short] (10.5,14.5) -- (10.75,14.5);
+\draw [line width=1.5pt, short] (10.5,14.5) -- (10.5,11.25);
+\draw [line width=1.5pt, short] (10.5,11.25) -- (8.25,8.25);
+\draw [line width=1.5pt, short] (10.5,11.25) -- (12.75,8.25);
+\draw [ fill={rgb,255:red,93; green,86; blue,86} , line width=1.5pt ] (7.5,8.25) rectangle (9,8);
+\draw [ fill={rgb,255:red,93; green,86; blue,86} , line width=1.5pt ] (12.25,8.25) rectangle (13.25,8);
+\draw [line width=0.5pt, dashed] (10.5,11.25) -- (10.5,8.25);
+\draw [line width=0.5pt, short] (10.5,8.25) -- (10.5,6.75);
+\draw [line width=0.5pt, short] (12.75,7.75) -- (12.75,6.75);
+\draw [line width=0.5pt, short] (8.25,7.75) -- (8.25,6.75);
+\draw [line width=0.5pt, <->, >=Stealth] (8.25,7.25) -- (10.5,7.25);
+\draw [line width=0.5pt, <->, >=Stealth] (10.5,7.25) -- (12.75,7.25);
+\draw [line width=0.5pt, short] (13.25,8.25) -- (14,8.25);
+\draw [line width=0.5pt, <->, >=Stealth] (13.5,8.25) -- (13.5,11.25);
+\draw [line width=0.5pt, <->, >=Stealth] (13.5,11.25) -- (13.5,14.5);
+\draw [line width=0.5pt, short] (13.25,11.25) -- (13.75,11.25);
+\draw [line width=0.5pt, short] (13.25,14.5) -- (14,14.5);
+\node [font=\large] at (13,13) {$5$ m};
+\node [font=\large] at (13,9.75) {$4$ m};
+\node [font=\large] at (11.5,7.75) {$3$ m};
+\node [font=\large] at (9.5,7.75) {$3$ m};
+\node [font=\large] at (10.25,11.5) {F};
+\node [font=\large] at (13,8.75) {G};
+\node [font=\large] at (9.75,14.75) {H};
+\node [font=\large] at (8,8.75) {K};
+\node [font=\large] at (10,13) {EI};
+\node [font=\large] at (9.75,9.5) {EI};
+\node [font=\large] at (11.25,9.5) {EI};
+ \draw[->,thick, color= red] (9.5,11) to[bend right=60] (11.5,11.75);
+ \node [font=\large, color = red] at (11.75,11.25) {M};
+\end{circuitikz}
+    If the magnitude \brak{\text{absolute value}} of the support moment at $H$ is $10\, kN-m$, the
+    magnitude \brak{\text{absolute value}} of the applied moment $M$ \brak{\text{in kN-m}} to maintain static equilibrium is \dots. \brak{round\, off \, to\, one\, decimal\,place}
+    \item Consider a simply supported beam $PQ$ as shown in the figure. A truck having
+    $100\, kN$ on the front axle and $200\, kN$ on the rear axle, moves from left to right.
+    The spacing between the axles is $3\, m$. The maximum bending moment at point $R$ is \dots kNm. \brak{in\, integer} 
+        
+
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\Large]
+\draw [short] (8,11.75) -- (7.5,11);
+\draw [short] (8,11.75) -- (8.5,11);
+\draw [short] (7.5,11) -- (8.5,11);
+\draw [short] (8,11.75) -- (16.25,11.75);
+\draw [short] (16.25,11.75) -- (15.75,11);
+\draw [short] (16.25,11.75) -- (16.75,11);
+\draw [short] (16.75,11) -- (15.75,11);
+\draw  (16,10.875) circle (0.125 cm);
+\draw  (16.5,10.875) circle (0.125cm);
+\draw [short] (7,11) -- (9,11);
+\draw [short] (15.75,10.75) -- (17,10.75);
+\draw [short] (16,10.75) -- (15.25,10.75);
+\draw [short] (7,11) -- (7.25,10.75);
+\draw [short] (7.5,11) -- (7.75,10.75);
+\draw [short] (8,11) -- (8.25,10.75);
+\draw [short] (8.5,11) -- (8.75,10.75);
+\draw [short] (8.75,11) -- (9,10.75);
+\draw [short] (15.25,10.75) -- (15.5,10.5);
+\draw [short] (15.75,10.75) -- (16,10.5);
+\draw [short] (16.25,10.75) -- (16.5,10.5);
+\draw [short] (16.75,10.75) -- (17,10.5);
+\draw [short] (17,10.75) -- (17.25,10.5);
+\draw [short] (16.25,10) -- (16.25,9);
+\draw [short] (8,9.75) -- (8,10);
+\draw [short] (8,10) -- (8,9);
+\draw [short] (10.25,9) -- (10.25,10);
+\draw [dashed] (10.25,10) -- (10.25,13);
+\draw [<->, >=Stealth] (8,9.5) -- (10.25,9.5);
+\draw [<->, >=Stealth] (10.25,9.5) -- (16.25,9.5);
+\node [font=\Large] at (8,12.25) {P};
+\node [font=\Large] at (16.75,12) {Q};
+\node [font=\Large] at (10,12.25) {R};
+\node [font=\Large] at (9,9.75) {$1$ m};
+\node [font=\Large] at (13,9.75) {$4$ m};
+\end{circuitikz}
+   
+\end{enumerate}
+\end{document}
