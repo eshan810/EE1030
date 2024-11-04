@@ -36,7 +36,7 @@ x_range = np.linspace(-15, 15, 100)  # Adjust as necessary to ensure lines exten
 # Generating all lines
 x_AB = line_gen(A, B)
 
-x_CD = line_gen(C, D)
+
 
 
 plt.plot(x_AB[0, :], x_AB[1, :], 'b--', label='$AB$')

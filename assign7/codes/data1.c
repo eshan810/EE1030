@@ -15,11 +15,13 @@ void print_points_to_file(const char *filename) {
     // Define points on the line 3x = 2y
     // Example points (calculated for demonstration)
     // For x = 1, y = 3/2 = 1.5
-    fprintf(file, "1 1.5\n"); // Point on the line
+    double x1 = 1, y1 = (3 * x1) / 2;
+    double x2 = -2, y2 = (3 * x2) / 2;
+    fprintf(file, "%.2lf %.2lf\n",x1,y1); // Point on the line
     
     // Another example point (calculated for demonstration)
     // For x = -2, y = -3
-    fprintf(file, "-2 -3\n"); // Point on the line
+    fprintf(file, "%.2lf %.2lf\n",x2,y2); // Point on the line
 
     fclose(file);
 }

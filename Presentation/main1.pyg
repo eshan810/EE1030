@@ -1,0 +1,30 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Function to read points from a file
+def read_points_from_file(filename):
+    points = np.loadtxt(filename)
+    return points
+
+# Read points from file
+points = read_points_from_file('output.txt')
+A, B, C, D = points[0], points[1], points[2], points[3]
+
+# Define x-range for line plot
+x_range = np.linspace(-10, 10, 100)
+
+# Generate line for AB and 3x=2y
+plt.plot([A[0], B[0]], [A[1], B[1]], 'b--', label='$AB$')
+plt.plot(x_range, (3/2) * x_range, 'r', label='$3x = 2y$')
+
+# Plot and annotate points
+plt.scatter(points[:, 0], points[:, 1], c='black')
+for i, point in enumerate([A, B, C, D]):
+    plt.text(point[0], point[1], f"Point {i+1}", ha='right')
+
+plt.xlabel("x")
+plt.ylabel("y")
+plt.legend()
+plt.grid()
+plt.savefig("plot.png")
+plt.show()
