@@ -1,4 +1,4 @@
-\frametitle{Python Code for Plotting}
+\frametitle{Python Code for Plotting $\mathcal{IV}$}
 \begin{lstlisting}[language=Python]
 # Customize the plot
 ax = plt.gca()

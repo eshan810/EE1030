@@ -76,7 +76,7 @@ columns=fullflexible
 \numberwithin{equation}{section}
 
 \title{Presentation By}
-\author{EE24BTECH11021 - ESHAN RAY}
+\author{EE24BTECH11021 - ESHAN RAY\\ B.TECH $1^{st}$ year in\\ Electrical Engineering\\ IITH}
 
 \date{\today} 
 
@@ -87,6 +87,7 @@ columns=fullflexible
 
 \section*{Outline}
 \begin{frame}
+\frametitle{$\mathcal{INDEX}$}
 \tableofcontents
 \end{frame}
 \section{Problem}
@@ -126,6 +127,7 @@ If the distances of $\vec P$ = \brak{x, y} from $\vec A$ = \brak{5, 1} and $\vec
 \begin{table}[H]    
   \centering
   \input{tables/table.tex}
+  \caption{Variables Used}
 \end{table}
 %Let $\vec{O}$ be the centre of $C$. Then the equation of the normal, OQ is
 %\begin{align}
@@ -180,10 +182,10 @@ If the distances of $\vec P$ = \brak{x, y} from $\vec A$ = \brak{5, 1} and $\vec
 \end{frame}
 \section{Plot}
 \begin{frame}
-\frametitle{Plot}
-\begin{figure}[H]
+	\frametitle{Plot}
+	\begin{figure}[H]
     \centering
-	\includegraphics[width=1\textwidth]{plots/plot.png}
+	\includegraphics[width=0.75\textwidth]{plots/plot.png}
     \caption{Perpendicular bisector of Line AB}
     \end{figure}   
 %
@@ -195,8 +197,8 @@ If the distances of $\vec P$ = \brak{x, y} from $\vec A$ = \brak{5, 1} and $\vec
 %\section{Plot}
 \section{C Code}
 \begin{frame}[fragile]
-\frametitle{C Code}
-\begin{lstlisting}[language=C]
+\frametitle{C Code $\mathcal{I}$}
+\begin{verbatim}
 #include <stdio.h>
 
 void print_points_to_file(const char *filename) {
@@ -213,14 +215,15 @@ void print_points_to_file(const char *filename) {
     // Define two points on the line 3x = 2y
     double x1 = 2, y1 = (3 * x1) / 2;
     double x2 = -2, y2 = (3 * x2) / 2;
-    \end{lstlisting}
+\end{verbatim}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{C Code}
-\begin{lstlisting}[language=C]
-
-    fprintf(file, "%.2lf %.2lf\n", x1, y1);  // Point on the line
-    fprintf(file, "%.2lf %.2lf\n", x2, y2);  // Another point on the line
+\frametitle{C Code $\mathcal{II}$}
+\begin{verbatim}
+    // Point on the line
+    fprintf(file, "%.2lf %.2lf\n", x1, y1); 
+    // Another point on the line
+    fprintf(file, "%.2lf %.2lf\n", x2, y2);  
 
     fclose(file);
 }
@@ -229,13 +232,19 @@ int main() {
     print_points_to_file("output.txt");
     return 0;
 }
-\end{lstlisting}
+\end{verbatim}
 \end{frame}
-
-
+\section{Output of C Code}
+\begin{frame}[fragile]
+\frametitle{Output of C Code}
+5 1\\
+-1 5\\
+1.00 1.50\\
+-2.00 -3.00\\
+\end{frame}
 \section{Python Code}
 \begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
+\frametitle{Python Code for Plotting $\mathcal{I}$}
 \begin{lstlisting}[language=Python]
 import sys                                         
 sys.path.insert(0, '/home/eshan/matgeo/codes/CoordGeo')      
@@ -255,7 +264,7 @@ points = read_points_from_file('output.txt')
 \end{lstlisting}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
+\frametitle{Python Code for Plotting $\mathcal{II}$}
 \begin{lstlisting}[language=Python]
 # Flatten the array if necessary
 if points.ndim == 3:
@@ -269,14 +278,14 @@ x_range = np.linspace(-15, 15, 100)  # Adjust as necessary to ensure lines exten
 # Generating all lines
 x_AB = line_gen(A, B)
 
-plt.plot(x_range,x_AB[0, :], x_AB[1, :], 'b--', label='$AB$')
+plt.plot(x_AB[0, :], x_AB[1, :], 'b--', label='$AB$')
 # Line CD
 slope_CD = (D[1] - C[1]) / (D[0] - C[0])
 intercept_CD = C[1] - slope_CD * C[0]
 \end{lstlisting}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
+\frametitle{Python Code for Plotting $\mathcal{III}$}
 \begin{lstlisting}[language=Python]
 plt.plot(x_range, slope_CD * x_range + intercept_CD, label='$3x=2y$', color='red')
 
@@ -286,7 +295,7 @@ plt.scatter(points[:, 0], points[:, 1], c=colors, label=None)
 
 # Annotate the vertices
 def annotate_point(point, label):
-    plt.annotate(f'{label}\n({point[0]:.2f}, {point[1]:.2f})',
+    plt.annotate(f'{label}\n({point[0]:.2f},{point[1]:.2f})',
                  point,
                  textcoords="offset points",
                  xytext=(0, 10),  # Position above the point
@@ -297,7 +306,7 @@ annotate_point(B, 'B')
 \end{lstlisting}
 \end{frame}
 \begin{frame}[fragile]
-\frametitle{Python Code for Plotting}
+\frametitle{Python Code for Plotting $\mathcal{IV}$}
 \begin{lstlisting}[language=Python]
 # Customize the plot
 ax = plt.gca()

@@ -3,4 +3,5 @@
 \beamer@sectionintoc {4}{Solution}{5}{0}{3}
 \beamer@sectionintoc {5}{Plot}{7}{0}{4}
 \beamer@sectionintoc {6}{C Code}{8}{0}{5}
-\beamer@sectionintoc {7}{Python Code}{10}{0}{6}
+\beamer@sectionintoc {7}{Output of C Code}{10}{0}{6}
+\beamer@sectionintoc {8}{Python Code}{11}{0}{7}
